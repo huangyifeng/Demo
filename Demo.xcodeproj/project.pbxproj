@@ -13,6 +13,14 @@
 		BB0FA59B15D4FC6200246A5E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB0FA59915D4FC6200246A5E /* Credits.rtf */; };
 		BB0FA59E15D4FC6200246A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FA59D15D4FC6200246A5E /* AppDelegate.m */; };
 		BB0FA5A115D4FC6200246A5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0FA59F15D4FC6200246A5E /* MainMenu.xib */; };
+		BB6D999115F5AEE600D1F63B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
+		BB6D999315F5AEE600D1F63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
+		BB6D999515F5AEE600D1F63B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
+		BB6D999B15F5AEE600D1F63B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB6D999915F5AEE600D1F63B /* InfoPlist.strings */; };
+		BB6D999D15F5AEE600D1F63B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D999C15F5AEE600D1F63B /* main.m */; };
+		BB6D99A115F5AEE600D1F63B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99A015F5AEE600D1F63B /* AppDelegate.m */; };
+		BB6D99A415F5AEE600D1F63B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99A315F5AEE600D1F63B /* ViewController.m */; };
+		BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6D99A515F5AEE600D1F63B /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +29,27 @@
 		BB0FA58D15D4FC6200246A5E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		BB0FA58E15D4FC6200246A5E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BB0FA58F15D4FC6200246A5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BB0FA59215D4FC6200246A5E /* Demo-Info.plist */ = {isa = PBXFileReference; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		BB0FA59215D4FC6200246A5E /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
 		BB0FA59415D4FC6200246A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB0FA59615D4FC6200246A5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BB0FA59815D4FC6200246A5E /* Demo-Prefix.pch */ = {isa = PBXFileReference; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		BB0FA59815D4FC6200246A5E /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
 		BB0FA59A15D4FC6200246A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		BB0FA59C15D4FC6200246A5E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB0FA59C15D4FC6200246A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB0FA59D15D4FC6200246A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB0FA5A015D4FC6200246A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB6D998E15F5AEE600D1F63B /* PagingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6D999015F5AEE600D1F63B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB6D999215F5AEE600D1F63B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		BB6D999815F5AEE600D1F63B /* PagingList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PagingList-Info.plist"; sourceTree = "<group>"; };
+		BB6D999A15F5AEE600D1F63B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB6D999C15F5AEE600D1F63B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB6D999E15F5AEE600D1F63B /* PagingList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PagingList-Prefix.pch"; sourceTree = "<group>"; };
+		BB6D999F15F5AEE600D1F63B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB6D99A015F5AEE600D1F63B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB6D99A215F5AEE600D1F63B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB6D99A315F5AEE600D1F63B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB6D99A615F5AEE600D1F63B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +61,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB6D998B15F5AEE600D1F63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6D999115F5AEE600D1F63B /* UIKit.framework in Frameworks */,
+				BB6D999315F5AEE600D1F63B /* Foundation.framework in Frameworks */,
+				BB6D999515F5AEE600D1F63B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				BB0FA59015D4FC6200246A5E /* Demo */,
+				BB6D999615F5AEE600D1F63B /* PagingList */,
 				BB0FA58915D4FC6200246A5E /* Frameworks */,
 				BB0FA58715D4FC6200246A5E /* Products */,
 			);
@@ -56,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				BB0FA58615D4FC6200246A5E /* Demo.app */,
+				BB6D998E15F5AEE600D1F63B /* PagingList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				BB0FA58A15D4FC6200246A5E /* Cocoa.framework */,
+				BB6D999015F5AEE600D1F63B /* UIKit.framework */,
+				BB6D999215F5AEE600D1F63B /* Foundation.framework */,
+				BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */,
 				BB0FA58C15D4FC6200246A5E /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -102,6 +138,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BB6D999615F5AEE600D1F63B /* PagingList */ = {
+			isa = PBXGroup;
+			children = (
+				BB6D999F15F5AEE600D1F63B /* AppDelegate.h */,
+				BB6D99A015F5AEE600D1F63B /* AppDelegate.m */,
+				BB6D99A215F5AEE600D1F63B /* ViewController.h */,
+				BB6D99A315F5AEE600D1F63B /* ViewController.m */,
+				BB6D99A515F5AEE600D1F63B /* ViewController.xib */,
+				BB6D999715F5AEE600D1F63B /* Supporting Files */,
+			);
+			path = PagingList;
+			sourceTree = "<group>";
+		};
+		BB6D999715F5AEE600D1F63B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB6D999815F5AEE600D1F63B /* PagingList-Info.plist */,
+				BB6D999915F5AEE600D1F63B /* InfoPlist.strings */,
+				BB6D999C15F5AEE600D1F63B /* main.m */,
+				BB6D999E15F5AEE600D1F63B /* PagingList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +180,23 @@
 			name = Demo;
 			productName = Demo;
 			productReference = BB0FA58615D4FC6200246A5E /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB6D998D15F5AEE600D1F63B /* PagingList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6D99AA15F5AEE600D1F63B /* Build configuration list for PBXNativeTarget "PagingList" */;
+			buildPhases = (
+				BB6D998A15F5AEE600D1F63B /* Sources */,
+				BB6D998B15F5AEE600D1F63B /* Frameworks */,
+				BB6D998C15F5AEE600D1F63B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagingList;
+			productName = PagingList;
+			productReference = BB6D998E15F5AEE600D1F63B /* PagingList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,6 +221,7 @@
 			projectRoot = "";
 			targets = (
 				BB0FA58515D4FC6200246A5E /* Demo */,
+				BB6D998D15F5AEE600D1F63B /* PagingList */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +237,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB6D998C15F5AEE600D1F63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6D999B15F5AEE600D1F63B /* InfoPlist.strings in Resources */,
+				BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -168,6 +255,16 @@
 			files = (
 				BB0FA59715D4FC6200246A5E /* main.m in Sources */,
 				BB0FA59E15D4FC6200246A5E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6D998A15F5AEE600D1F63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6D999D15F5AEE600D1F63B /* main.m in Sources */,
+				BB6D99A115F5AEE600D1F63B /* AppDelegate.m in Sources */,
+				BB6D99A415F5AEE600D1F63B /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +293,22 @@
 				BB0FA5A015D4FC6200246A5E /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BB6D999915F5AEE600D1F63B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB6D999A15F5AEE600D1F63B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB6D99A515F5AEE600D1F63B /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB6D99A615F5AEE600D1F63B /* en */,
+			);
+			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -268,6 +381,52 @@
 			};
 			name = Release;
 		};
+		BB6D99A815F5AEE600D1F63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagingList/PagingList-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "PagingList/PagingList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB6D99A915F5AEE600D1F63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagingList/PagingList-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "PagingList/PagingList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -285,6 +444,15 @@
 			buildConfigurations = (
 				BB0FA5A515D4FC6200246A5E /* Debug */,
 				BB0FA5A615D4FC6200246A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6D99AA15F5AEE600D1F63B /* Build configuration list for PBXNativeTarget "PagingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6D99A815F5AEE600D1F63B /* Debug */,
+				BB6D99A915F5AEE600D1F63B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
