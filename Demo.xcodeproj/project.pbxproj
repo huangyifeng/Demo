@@ -21,6 +21,7 @@
 		BB6D99A115F5AEE600D1F63B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99A015F5AEE600D1F63B /* AppDelegate.m */; };
 		BB6D99A415F5AEE600D1F63B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99A315F5AEE600D1F63B /* ViewController.m */; };
 		BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6D99A515F5AEE600D1F63B /* ViewController.xib */; };
+		BB6D99AF15F5B10700D1F63B /* PagingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		BB6D99A215F5AEE600D1F63B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB6D99A315F5AEE600D1F63B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB6D99A615F5AEE600D1F63B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		BB6D99AD15F5B10700D1F63B /* PagingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingListViewController.h; sourceTree = "<group>"; };
+		BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,7 @@
 		BB6D999615F5AEE600D1F63B /* PagingList */ = {
 			isa = PBXGroup;
 			children = (
+				BB6D99AC15F5B04A00D1F63B /* Controllers */,
 				BB6D999F15F5AEE600D1F63B /* AppDelegate.h */,
 				BB6D99A015F5AEE600D1F63B /* AppDelegate.m */,
 				BB6D99A215F5AEE600D1F63B /* ViewController.h */,
@@ -160,6 +164,15 @@
 				BB6D999E15F5AEE600D1F63B /* PagingList-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB6D99AC15F5B04A00D1F63B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB6D99AD15F5B10700D1F63B /* PagingListViewController.h */,
+				BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 				BB6D999D15F5AEE600D1F63B /* main.m in Sources */,
 				BB6D99A115F5AEE600D1F63B /* AppDelegate.m in Sources */,
 				BB6D99A415F5AEE600D1F63B /* ViewController.m in Sources */,
+				BB6D99AF15F5B10700D1F63B /* PagingListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
