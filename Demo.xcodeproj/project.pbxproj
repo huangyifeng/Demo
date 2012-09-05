@@ -13,6 +13,9 @@
 		BB0FA59B15D4FC6200246A5E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB0FA59915D4FC6200246A5E /* Credits.rtf */; };
 		BB0FA59E15D4FC6200246A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FA59D15D4FC6200246A5E /* AppDelegate.m */; };
 		BB0FA5A115D4FC6200246A5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0FA59F15D4FC6200246A5E /* MainMenu.xib */; };
+		BB62FAC815F7477E000E1F6C /* TestPagingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62FAC615F7477E000E1F6C /* TestPagingListViewController.m */; };
+		BB62FACE15F748F9000E1F6C /* SinglePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62FACC15F748F9000E1F6C /* SinglePageViewController.m */; };
+		BB62FACF15F748F9000E1F6C /* SinglePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB62FACD15F748F9000E1F6C /* SinglePageViewController.xib */; };
 		BB6D999115F5AEE600D1F63B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
 		BB6D999315F5AEE600D1F63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
 		BB6D999515F5AEE600D1F63B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
@@ -38,6 +41,11 @@
 		BB0FA59C15D4FC6200246A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB0FA59D15D4FC6200246A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB0FA5A015D4FC6200246A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB62FAC515F7477E000E1F6C /* TestPagingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPagingListViewController.h; sourceTree = "<group>"; };
+		BB62FAC615F7477E000E1F6C /* TestPagingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPagingListViewController.m; sourceTree = "<group>"; };
+		BB62FACB15F748F9000E1F6C /* SinglePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePageViewController.h; sourceTree = "<group>"; };
+		BB62FACC15F748F9000E1F6C /* SinglePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePageViewController.m; sourceTree = "<group>"; };
+		BB62FACD15F748F9000E1F6C /* SinglePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SinglePageViewController.xib; sourceTree = "<group>"; };
 		BB6D998E15F5AEE600D1F63B /* PagingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6D999015F5AEE600D1F63B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BB6D999215F5AEE600D1F63B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -144,6 +152,11 @@
 		BB6D999615F5AEE600D1F63B /* PagingList */ = {
 			isa = PBXGroup;
 			children = (
+				BB62FAC515F7477E000E1F6C /* TestPagingListViewController.h */,
+				BB62FAC615F7477E000E1F6C /* TestPagingListViewController.m */,
+				BB62FACB15F748F9000E1F6C /* SinglePageViewController.h */,
+				BB62FACC15F748F9000E1F6C /* SinglePageViewController.m */,
+				BB62FACD15F748F9000E1F6C /* SinglePageViewController.xib */,
 				BB6D99AC15F5B04A00D1F63B /* Controllers */,
 				BB6D999F15F5AEE600D1F63B /* AppDelegate.h */,
 				BB6D99A015F5AEE600D1F63B /* AppDelegate.m */,
@@ -256,6 +269,7 @@
 			files = (
 				BB6D999B15F5AEE600D1F63B /* InfoPlist.strings in Resources */,
 				BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */,
+				BB62FACF15F748F9000E1F6C /* SinglePageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +293,8 @@
 				BB6D99A115F5AEE600D1F63B /* AppDelegate.m in Sources */,
 				BB6D99A415F5AEE600D1F63B /* ViewController.m in Sources */,
 				BB6D99AF15F5B10700D1F63B /* PagingListViewController.m in Sources */,
+				BB62FAC815F7477E000E1F6C /* TestPagingListViewController.m in Sources */,
+				BB62FACE15F748F9000E1F6C /* SinglePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +426,7 @@
 				GCC_PREFIX_HEADER = "PagingList/PagingList-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "PagingList/PagingList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
@@ -432,7 +448,7 @@
 				GCC_PREFIX_HEADER = "PagingList/PagingList-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "PagingList/PagingList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -469,6 +485,7 @@
 				BB6D99A915F5AEE600D1F63B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

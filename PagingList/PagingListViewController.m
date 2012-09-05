@@ -21,6 +21,7 @@
 - (void)initViewComponent;
 - (void)initModalComponent;
 - (void)loadScrollViewWithPage:(NSInteger)pageIndex;
+- (void)refreshScrollViewSize;
 
 @end
 
@@ -58,6 +59,7 @@
     self._scrollView.showsVerticalScrollIndicator = NO;
     self._scrollView.scrollsToTop = NO;
     self._scrollView.delegate = self;
+    self._scrollView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
 
 - (void)initModalComponent
@@ -70,7 +72,7 @@
 {
     [super loadView];
     [self initViewComponent];
-    self.view = self._scrollView;
+    [self.view addSubview:self._scrollView];
 }
 
 #pragma mark - life cycle
@@ -85,7 +87,9 @@
 {
     [super viewWillAppear:animated];
     
-    
+    [self loadScrollViewWithPage:self._currentPageIndex - 1];
+    [self loadScrollViewWithPage:self._currentPageIndex];
+    [self loadScrollViewWithPage:self._currentPageIndex + 1];
     
 }
 
@@ -119,12 +123,25 @@
     }
 }
 
+- (void)refreshScrollViewSize
+{
+    self._pageCount = [self getTotalPageCount];
+    CGSize scrollSize = self._scrollView.frame.size;
+    [self._scrollView setContentSize:CGSizeMake(scrollSize.width * self._pageCount, scrollSize.height)];
+}
+
 #pragma mark - for override
 
 -(UIViewController *)controllerWithPage:(NSInteger)pageIndex
 {
     [NSException raise:NSInternalInconsistencyException format:@"you must override %@ in subclass", NSStringFromSelector(_cmd)];
     return nil;
+}
+
+- (NSInteger)getTotalPageCount
+{
+    [NSException raise:NSInternalInconsistencyException format:@"you must override %@ in subclass", NSStringFromSelector(_cmd)];
+    return 0;
 }
 
 #pragma mark - UIScrollViewDelegate

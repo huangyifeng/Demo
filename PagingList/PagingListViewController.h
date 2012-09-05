@@ -22,5 +22,6 @@
 
 //for override
 - (UIViewController *)controllerWithPage:(NSInteger)pageIndex;
+- (NSInteger)getTotalPageCount;
 
 @end

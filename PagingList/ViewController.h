@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)showPagingList:(id)sender;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestPagingListViewController.h"
 
 @interface ViewController ()
 
@@ -26,9 +27,10 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (void)showPagingList:(id)sender
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    TestPagingListViewController *test = [[[TestPagingListViewController alloc] init] autorelease];
+    [self presentModalViewController:test animated:YES];
 }
 
 @end
