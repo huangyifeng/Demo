@@ -46,7 +46,7 @@
 
 - (UIViewController *)controllerWithPage:(NSInteger)pageIndex
 {
-    SinglePageViewController *pager = [[[SinglePageViewController alloc] initWithNibName:@"SinglePageViwController" bundle:nil] autorelease];
+    SinglePageViewController *pager = [[[SinglePageViewController alloc] initWithNibName:@"SinglePageViewController" bundle:nil] autorelease];
     pager.data = pageIndex;
     return pager;
 }

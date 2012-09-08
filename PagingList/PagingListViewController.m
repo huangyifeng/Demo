@@ -81,6 +81,7 @@
 {
     [super viewDidLoad];
 	[self initModalComponent];
+    [self refreshScrollViewSize];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -120,6 +121,7 @@
     {
         CGSize scrollSize = self._scrollView.frame.size;
         controller.view.frame = CGRectMake(pageIndex * scrollSize.width, 0, scrollSize.width, scrollSize.height);
+        [self._scrollView addSubview:controller.view];
     }
 }
 
@@ -146,5 +148,13 @@
 
 #pragma mark - UIScrollViewDelegate
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat width = scrollView.frame.size.width;
+    self._currentPageIndex = floor(self._scrollView.contentOffset.x / width);
+    [self loadScrollViewWithPage:self._currentPageIndex - 1];
+    [self loadScrollViewWithPage:self._currentPageIndex];
+    [self loadScrollViewWithPage:self._currentPageIndex + 1];
+}
 
 @end
