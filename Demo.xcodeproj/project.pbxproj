@@ -25,7 +25,32 @@
 		BB6D99A415F5AEE600D1F63B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99A315F5AEE600D1F63B /* ViewController.m */; };
 		BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6D99A515F5AEE600D1F63B /* ViewController.xib */; };
 		BB6D99AF15F5B10700D1F63B /* PagingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */; };
+		C4725F481609FEA30072E322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
+		C4725F491609FEA30072E322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
+		C4725F4A1609FEA30072E322 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
+		C4725F501609FEA30072E322 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4725F4E1609FEA30072E322 /* InfoPlist.strings */; };
+		C4725F521609FEA30072E322 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F511609FEA30072E322 /* main.m */; };
+		C4725F561609FEA30072E322 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F551609FEA30072E322 /* AppDelegate.m */; };
+		C4725F591609FEA30072E322 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F581609FEA30072E322 /* ViewController.m */; };
+		C4725F5C1609FEA30072E322 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4725F5A1609FEA30072E322 /* ViewController.xib */; };
+		C4725F641609FEA30072E322 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4725F631609FEA30072E322 /* SenTestingKit.framework */; };
+		C4725F651609FEA30072E322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
+		C4725F661609FEA30072E322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
+		C4725F6E1609FEA30072E322 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4725F6C1609FEA30072E322 /* InfoPlist.strings */; };
+		C4725F711609FEA30072E322 /* ScrollToolbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F701609FEA30072E322 /* ScrollToolbarTests.m */; };
+		C4725F7C160A09C10072E322 /* ScrollToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F7B160A09C10072E322 /* ScrollToolbar.m */; };
+		C4725F7F160A106C0072E322 /* ScrollBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F7E160A106C0072E322 /* ScrollBarButtonItem.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4725F671609FEA30072E322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0FA57D15D4FC6200246A5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4725F451609FEA30072E322;
+			remoteInfo = ScrollToolbar;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BB0FA58615D4FC6200246A5E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +86,26 @@
 		BB6D99A615F5AEE600D1F63B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		BB6D99AD15F5B10700D1F63B /* PagingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingListViewController.h; sourceTree = "<group>"; };
 		BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingListViewController.m; sourceTree = "<group>"; };
+		C4725F461609FEA30072E322 /* ScrollToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4725F4D1609FEA30072E322 /* ScrollToolbar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollToolbar-Info.plist"; sourceTree = "<group>"; };
+		C4725F4F1609FEA30072E322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C4725F511609FEA30072E322 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4725F531609FEA30072E322 /* ScrollToolbar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollToolbar-Prefix.pch"; sourceTree = "<group>"; };
+		C4725F541609FEA30072E322 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4725F551609FEA30072E322 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4725F571609FEA30072E322 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C4725F581609FEA30072E322 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C4725F5B1609FEA30072E322 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C4725F621609FEA30072E322 /* ScrollToolbarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollToolbarTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4725F631609FEA30072E322 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C4725F6B1609FEA30072E322 /* ScrollToolbarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollToolbarTests-Info.plist"; sourceTree = "<group>"; };
+		C4725F6D1609FEA30072E322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C4725F6F1609FEA30072E322 /* ScrollToolbarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollToolbarTests.h; sourceTree = "<group>"; };
+		C4725F701609FEA30072E322 /* ScrollToolbarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollToolbarTests.m; sourceTree = "<group>"; };
+		C4725F7A160A09C10072E322 /* ScrollToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollToolbar.h; sourceTree = "<group>"; };
+		C4725F7B160A09C10072E322 /* ScrollToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollToolbar.m; sourceTree = "<group>"; };
+		C4725F7D160A106C0072E322 /* ScrollBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollBarButtonItem.h; sourceTree = "<group>"; };
+		C4725F7E160A106C0072E322 /* ScrollBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollBarButtonItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +127,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4725F431609FEA30072E322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4725F481609FEA30072E322 /* UIKit.framework in Frameworks */,
+				C4725F491609FEA30072E322 /* Foundation.framework in Frameworks */,
+				C4725F4A1609FEA30072E322 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4725F5E1609FEA30072E322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4725F641609FEA30072E322 /* SenTestingKit.framework in Frameworks */,
+				C4725F651609FEA30072E322 /* UIKit.framework in Frameworks */,
+				C4725F661609FEA30072E322 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +155,8 @@
 			children = (
 				BB0FA59015D4FC6200246A5E /* Demo */,
 				BB6D999615F5AEE600D1F63B /* PagingList */,
+				C4725F4B1609FEA30072E322 /* ScrollToolbar */,
+				C4725F691609FEA30072E322 /* ScrollToolbarTests */,
 				BB0FA58915D4FC6200246A5E /* Frameworks */,
 				BB0FA58715D4FC6200246A5E /* Products */,
 			);
@@ -100,6 +167,8 @@
 			children = (
 				BB0FA58615D4FC6200246A5E /* Demo.app */,
 				BB6D998E15F5AEE600D1F63B /* PagingList.app */,
+				C4725F461609FEA30072E322 /* ScrollToolbar.app */,
+				C4725F621609FEA30072E322 /* ScrollToolbarTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +180,7 @@
 				BB6D999015F5AEE600D1F63B /* UIKit.framework */,
 				BB6D999215F5AEE600D1F63B /* Foundation.framework */,
 				BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */,
+				C4725F631609FEA30072E322 /* SenTestingKit.framework */,
 				BB0FA58C15D4FC6200246A5E /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -188,6 +258,61 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		C4725F4B1609FEA30072E322 /* ScrollToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				C4725F791609FF870072E322 /* Toolbar */,
+				C4725F541609FEA30072E322 /* AppDelegate.h */,
+				C4725F551609FEA30072E322 /* AppDelegate.m */,
+				C4725F571609FEA30072E322 /* ViewController.h */,
+				C4725F581609FEA30072E322 /* ViewController.m */,
+				C4725F5A1609FEA30072E322 /* ViewController.xib */,
+				C4725F4C1609FEA30072E322 /* Supporting Files */,
+			);
+			path = ScrollToolbar;
+			sourceTree = "<group>";
+		};
+		C4725F4C1609FEA30072E322 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4725F4D1609FEA30072E322 /* ScrollToolbar-Info.plist */,
+				C4725F4E1609FEA30072E322 /* InfoPlist.strings */,
+				C4725F511609FEA30072E322 /* main.m */,
+				C4725F531609FEA30072E322 /* ScrollToolbar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4725F691609FEA30072E322 /* ScrollToolbarTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4725F6F1609FEA30072E322 /* ScrollToolbarTests.h */,
+				C4725F701609FEA30072E322 /* ScrollToolbarTests.m */,
+				C4725F6A1609FEA30072E322 /* Supporting Files */,
+			);
+			path = ScrollToolbarTests;
+			sourceTree = "<group>";
+		};
+		C4725F6A1609FEA30072E322 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4725F6B1609FEA30072E322 /* ScrollToolbarTests-Info.plist */,
+				C4725F6C1609FEA30072E322 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4725F791609FF870072E322 /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				C4725F7A160A09C10072E322 /* ScrollToolbar.h */,
+				C4725F7B160A09C10072E322 /* ScrollToolbar.m */,
+				C4725F7D160A106C0072E322 /* ScrollBarButtonItem.h */,
+				C4725F7E160A106C0072E322 /* ScrollBarButtonItem.m */,
+			);
+			name = Toolbar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +350,42 @@
 			productReference = BB6D998E15F5AEE600D1F63B /* PagingList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C4725F451609FEA30072E322 /* ScrollToolbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4725F761609FEA30072E322 /* Build configuration list for PBXNativeTarget "ScrollToolbar" */;
+			buildPhases = (
+				C4725F421609FEA30072E322 /* Sources */,
+				C4725F431609FEA30072E322 /* Frameworks */,
+				C4725F441609FEA30072E322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollToolbar;
+			productName = ScrollToolbar;
+			productReference = C4725F461609FEA30072E322 /* ScrollToolbar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4725F611609FEA30072E322 /* ScrollToolbarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4725F771609FEA30072E322 /* Build configuration list for PBXNativeTarget "ScrollToolbarTests" */;
+			buildPhases = (
+				C4725F5D1609FEA30072E322 /* Sources */,
+				C4725F5E1609FEA30072E322 /* Frameworks */,
+				C4725F5F1609FEA30072E322 /* Resources */,
+				C4725F601609FEA30072E322 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4725F681609FEA30072E322 /* PBXTargetDependency */,
+			);
+			name = ScrollToolbarTests;
+			productName = ScrollToolbarTests;
+			productReference = C4725F621609FEA30072E322 /* ScrollToolbarTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +409,8 @@
 			targets = (
 				BB0FA58515D4FC6200246A5E /* Demo */,
 				BB6D998D15F5AEE600D1F63B /* PagingList */,
+				C4725F451609FEA30072E322 /* ScrollToolbar */,
+				C4725F611609FEA30072E322 /* ScrollToolbarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +436,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4725F441609FEA30072E322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4725F501609FEA30072E322 /* InfoPlist.strings in Resources */,
+				C4725F5C1609FEA30072E322 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4725F5F1609FEA30072E322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4725F6E1609FEA30072E322 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4725F601609FEA30072E322 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB0FA58215D4FC6200246A5E /* Sources */ = {
@@ -298,7 +494,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4725F421609FEA30072E322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4725F521609FEA30072E322 /* main.m in Sources */,
+				C4725F561609FEA30072E322 /* AppDelegate.m in Sources */,
+				C4725F591609FEA30072E322 /* ViewController.m in Sources */,
+				C4725F7C160A09C10072E322 /* ScrollToolbar.m in Sources */,
+				C4725F7F160A106C0072E322 /* ScrollBarButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4725F5D1609FEA30072E322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4725F711609FEA30072E322 /* ScrollToolbarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4725F681609FEA30072E322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4725F451609FEA30072E322 /* ScrollToolbar */;
+			targetProxy = C4725F671609FEA30072E322 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BB0FA59315D4FC6200246A5E /* InfoPlist.strings */ = {
@@ -339,6 +563,30 @@
 				BB6D99A615F5AEE600D1F63B /* en */,
 			);
 			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		C4725F4E1609FEA30072E322 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4725F4F1609FEA30072E322 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C4725F5A1609FEA30072E322 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4725F5B1609FEA30072E322 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		C4725F6C1609FEA30072E322 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4725F6D1609FEA30072E322 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -457,6 +705,99 @@
 			};
 			name = Release;
 		};
+		C4725F721609FEA30072E322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollToolbar/ScrollToolbar-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ScrollToolbar/ScrollToolbar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C4725F731609FEA30072E322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollToolbar/ScrollToolbar-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ScrollToolbar/ScrollToolbar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C4725F741609FEA30072E322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollToolbar.app/ScrollToolbar";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollToolbar/ScrollToolbar-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ScrollToolbarTests/ScrollToolbarTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C4725F751609FEA30072E322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollToolbar.app/ScrollToolbar";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollToolbar/ScrollToolbar-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ScrollToolbarTests/ScrollToolbarTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -486,6 +827,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C4725F761609FEA30072E322 /* Build configuration list for PBXNativeTarget "ScrollToolbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4725F721609FEA30072E322 /* Debug */,
+				C4725F731609FEA30072E322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4725F771609FEA30072E322 /* Build configuration list for PBXNativeTarget "ScrollToolbarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4725F741609FEA30072E322 /* Debug */,
+				C4725F751609FEA30072E322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
