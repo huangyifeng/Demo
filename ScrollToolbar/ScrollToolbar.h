@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ScrollToolbar : UIView
 {
     UIScrollView    *_scrollView;
-    UIView          *_arrow;
+    UIView          *_arrowView;
+    id<ScrollToolbarDelegate>   delegate;
 }
+
+
 
 @end

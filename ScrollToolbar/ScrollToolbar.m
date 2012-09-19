@@ -8,7 +8,32 @@
 
 #import "ScrollToolbar.h"
 
+@interface ScrollToolbar ()
+
+@property(nonatomic, retain)UIScrollView    *_scrollView;
+@property(nonatomic, retain)UIView          *_arrowView;
+
+@end
+
 @implementation ScrollToolbar
+
+- (void)dealloc
+{
+    [_scrollView release]; _scrollView = nil;
+    [_arrowView release];  _arrowView = nil;
+    [super dealloc];
+}
+
+#pragma mark - initialize
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -17,6 +42,15 @@
         // Initialization code
     }
     return self;
+}
+
+#pragma mark - override
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    
 }
 
 /*
