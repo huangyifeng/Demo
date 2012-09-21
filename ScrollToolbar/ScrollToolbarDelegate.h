@@ -21,6 +21,6 @@
 @protocol ScrollToolbarDelegate <NSObject>
 
 - (void)toolbar:(ScrollToolbar *)toolbar didTapButtonAtPosition:(NSInteger)position;
-- (CGFloat)toolbar:(ScrollToolbar *)toolbar widthForButton
+- (CGFloat)toolbar:(ScrollToolbar *)toolbar widthForButtonAtPosition:(NSInteger)position;
 
 @end

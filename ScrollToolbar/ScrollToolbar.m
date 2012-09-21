@@ -14,7 +14,7 @@
 @property(nonatomic, retain)UIScrollView    *_scrollView;
 @property(nonatomic, retain)UIView          *_arrowView;
 
-
+- (void)initComponent;
 
 @end
 
@@ -36,11 +36,24 @@
 
 #pragma mark - initialize
 
+- (void)initComponent
+{
+    self._scrollView = [[[UIScrollView alloc] init] autorelease];
+    self._scrollView.showsHorizontalScrollIndicator = NO;
+    self._scrollView.showsVerticalScrollIndicator = NO;
+    
+    self._arrowView = [[[UIView alloc] init] autorelease];
+    self._arrowView.backgroundColor = [UIColor lightGrayColor];
+    
+    [self addSubview:self._scrollView];
+    [self addSubview:self._arrowView];
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        // Initialization code
+        [self initComponent];
     }
     return self;
 }
@@ -49,7 +62,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        [self initComponent];
     }
     return self;
 }
@@ -62,14 +75,5 @@
     
     
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

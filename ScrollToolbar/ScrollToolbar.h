@@ -12,9 +12,13 @@
 
 @interface ScrollToolbar : UIView
 {
+    //View
     UIScrollView    *_scrollView;
     UIView          *_arrowView;
+    
+    //model
     id<ScrollToolbarDelegate>   _delegate;
+    NSInteger       selectedButtonIndex;
 }
 
 @property(nonatomic, assign)id<ScrollToolbarDelegate> delegate;
