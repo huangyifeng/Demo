@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollToolbarDelegate.h"
 
 
 @interface ScrollToolbar : UIView
 {
     UIScrollView    *_scrollView;
     UIView          *_arrowView;
-    id<ScrollToolbarDelegate>   delegate;
+    id<ScrollToolbarDelegate>   _delegate;
 }
 
-
+@property(nonatomic, assign)id<ScrollToolbarDelegate> delegate;
 
 @end

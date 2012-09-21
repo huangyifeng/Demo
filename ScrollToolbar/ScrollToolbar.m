@@ -10,12 +10,22 @@
 
 @interface ScrollToolbar ()
 
+//View
 @property(nonatomic, retain)UIScrollView    *_scrollView;
 @property(nonatomic, retain)UIView          *_arrowView;
+
+
 
 @end
 
 @implementation ScrollToolbar
+
+//View
+@synthesize _scrollView = _scrollView;
+@synthesize _arrowView  = _arrowView;
+
+//Model
+
 
 - (void)dealloc
 {
