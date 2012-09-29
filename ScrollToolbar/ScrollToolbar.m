@@ -25,6 +25,7 @@
 @synthesize _arrowView  = _arrowView;
 
 //Model
+@synthesize delegate = _delegate;
 
 
 - (void)dealloc
@@ -41,6 +42,8 @@
     self._scrollView = [[[UIScrollView alloc] init] autorelease];
     self._scrollView.showsHorizontalScrollIndicator = NO;
     self._scrollView.showsVerticalScrollIndicator = NO;
+    self._scrollView.scrollsToTop = NO;
+    self._scrollView.multipleTouchEnabled = NO;
     
     self._arrowView = [[[UIView alloc] init] autorelease];
     self._arrowView.backgroundColor = [UIColor lightGrayColor];
@@ -72,6 +75,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    
     
     
 }

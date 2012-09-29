@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollToolbarButtonItem.h"
 
 @interface ScrollToolbarButton : UIView
+{
+@private
+    
+    //model
+    ScrollToolbarButtonItem *_toolbarItem;
+    
+    //view
+    UILabel         *_buttonNameLabel;
+    UIImageView     *_buttonImageView;
+}
+
+@property(nonatomic, retain)ScrollToolbarButtonItem *toolbarItem;
+
+- (id)initWithToolbarItem:(ScrollToolbarButtonItem *)toolbarItem;
 
 @end

@@ -18,7 +18,7 @@
     
     //model
     id<ScrollToolbarDelegate>   _delegate;
-    NSInteger       selectedButtonIndex;
+    NSInteger       _selectedButtonIndex;
 }
 
 @property(nonatomic, assign)id<ScrollToolbarDelegate> delegate;

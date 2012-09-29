@@ -8,24 +8,77 @@
 
 #import "ScrollToolbarButton.h"
 
+@interface ScrollToolbarButton ()
+
+@property(nonatomic, retain)UILabel     *_buttonNameLabel;
+@property(nonatomic, retain)UIImageView *_buttonImageView;
+
+- (void)initViewComponent;
+
+@end
+
 @implementation ScrollToolbarButton
+
+@synthesize toolbarItem = _toolbarItem;
+
+- (void)dealloc
+{
+    [_buttonNameLabel release]; _buttonNameLabel = nil;
+    [_buttonImageView release]; _buttonImageView = nil;
+    [super dealloc];
+}
+
+
+
+#pragma mark - init
+
+- (void)initViewComponent
+{
+    self._buttonNameLabel = [[[UILabel alloc] init] autorelease];
+    self._buttonNameLabel.textAlignment = NSTextAlignmentCenter;
+    self._buttonNameLabel.textColor = [UIColor blackColor];
+    
+    self._buttonImageView = [[[UIImageView alloc] init] autorelease];
+    
+    [self addSubview:self._buttonNameLabel];
+    [self addSubview:self._buttonImageView];
+}
+
+- (id)initWithToolbarItem:(ScrollToolbarButtonItem *)toolbarItem
+{
+    self = [super init];
+    if (self)
+    {
+        self.toolbarItem = toolbarItem;
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self)
+    {
+        [self initViewComponent];
+    }
+    return self;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        [self initViewComponent];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+#pragma mark - override
+
+- (void)layoutSubviews
 {
-    // Drawing code
+    [super layoutSubviews];
+    
 }
-*/
 
 @end
