@@ -8,13 +8,26 @@
 
 #import "ScrollToolbar.h"
 
+static CGFloat k_default_arrow_height = 20;
+static CGFloat k_default_button_widht = 80;
+
+
 @interface ScrollToolbar ()
 
 //View
 @property(nonatomic, retain)UIScrollView    *_scrollView;
 @property(nonatomic, retain)UIView          *_arrowView;
 
+@property(nonatomic, assign)CGFloat         _buttonWidth;
+@property(nonatomic, retain)NSArray         *_buttons;
+
+//view
 - (void)initComponent;
+- (void)loadLayoutParam;
+- (void)createButtons;
+
+//action
+- (void)arrowMoveToIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
 
 @end
 
@@ -23,15 +36,18 @@
 //View
 @synthesize _scrollView = _scrollView;
 @synthesize _arrowView  = _arrowView;
+@synthesize _buttons    = _buttons;
 
 //Model
-@synthesize delegate = _delegate;
+@synthesize delegate    = _delegate;
+@synthesize dataSource  = _dataSource;
 
 
 - (void)dealloc
 {
     [_scrollView release]; _scrollView = nil;
     [_arrowView release];  _arrowView = nil;
+    [_buttons release]; _buttons = nil;
     [super dealloc];
 }
 
@@ -69,6 +85,24 @@
     }
     return self;
 }
+
+#pragma mark - private
+
+- (void)arrowMoveToIndex:(NSInteger)buttonIndex animated:(BOOL)animated
+{
+    
+}
+
+- (void)createButtons
+{
+    if (self._buttons && 0 < self._buttons.count)
+    {
+        [self._buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            [obj removeFromSuperview];
+        }];
+    }
+}
+
 
 #pragma mark - override
 

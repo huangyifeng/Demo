@@ -16,11 +16,16 @@
     UIScrollView    *_scrollView;
     UIView          *_arrowView;
     
+    NSArray         *_buttons;
+    
     //model
     id<ScrollToolbarDelegate>   _delegate;
-    NSInteger       _selectedButtonIndex;
+    id<ScrollToolbarDataSource> _dataSource;
+    NSInteger                   _selectedButtonIndex;
 }
 
-@property(nonatomic, assign)id<ScrollToolbarDelegate> delegate;
+@property(nonatomic, assign)id<ScrollToolbarDelegate>   delegate;
+@property(nonatomic, assign)id<ScrollToolbarDataSource> dataSource;
+
 
 @end
