@@ -7,9 +7,11 @@
 //
 
 #import "ScrollToolbar.h"
+#import "ScrollToolbarButton.h"
 
 static CGFloat k_default_arrow_height = 20;
 static CGFloat k_default_button_widht = 80;
+static CGFloat k_default_scroll_duration = 0.3;
 
 
 @interface ScrollToolbar ()
@@ -20,6 +22,7 @@ static CGFloat k_default_button_widht = 80;
 
 @property(nonatomic, assign)CGFloat         _buttonWidth;
 @property(nonatomic, retain)NSArray         *_buttons;
+@property(nonatomic, assign)NSInteger       _numberOfButtons;
 
 //view
 - (void)initComponent;
@@ -28,6 +31,7 @@ static CGFloat k_default_button_widht = 80;
 
 //action
 - (void)arrowMoveToIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
+- (void)__arrowMoveToIndex:(NSInteger)buttonIndex;
 
 @end
 
@@ -41,6 +45,7 @@ static CGFloat k_default_button_widht = 80;
 //Model
 @synthesize delegate    = _delegate;
 @synthesize dataSource  = _dataSource;
+@synthesize _numberOfButtons = _numberOfButtons;
 
 
 - (void)dealloc
@@ -88,9 +93,41 @@ static CGFloat k_default_button_widht = 80;
 
 #pragma mark - private
 
+- (void)loadLayoutParam
+{
+    self._numberOfButtons = 0;
+    
+    if ([self.dataSource respondsToSelector:@selector(numberOfButtonInToolbar:)])
+    {
+        self._numberOfButtons = [self.dataSource numberOfButtonInToolbar:self];
+    }
+}
+
 - (void)arrowMoveToIndex:(NSInteger)buttonIndex animated:(BOOL)animated
 {
-    
+    if (animated)
+    {
+        [UIView animateWithDuration:k_default_scroll_duration animations:^{
+            [self __arrowMoveToIndex:buttonIndex];
+        }];
+    }
+    else
+    {
+        [self __arrowMoveToIndex:buttonIndex];
+    }
+}
+
+- (void)__arrowMoveToIndex:(NSInteger)buttonIndex
+{
+    if (-1 < buttonIndex && buttonIndex < [self._buttons count])
+    {
+        UIView *button = [self._buttons objectAtIndex:buttonIndex];
+        CGPoint buttonPoint = button.frame.origin;
+        CGSize  buttonSize = button.frame.size;
+        CGRect  arrowFrame = self._arrowView.frame;
+        CGFloat dx = (buttonPoint.x + buttonSize.width / 2 - arrowFrame.size.width / 2) - arrowFrame.origin.x;
+        self._arrowView.frame = CGRectOffset(arrowFrame, dx, 0);
+    }
 }
 
 - (void)createButtons
@@ -101,6 +138,18 @@ static CGFloat k_default_button_widht = 80;
             [obj removeFromSuperview];
         }];
     }
+
+    if ([self.dataSource respondsToSelector:@selector(toolbar:buttonAtPosition:)])
+    {
+        NSMutableArray *buttons = [NSMutableArray array];
+        for (int i = 0; i < self._numberOfButtons; i++)
+        {
+            ScrollToolbarButton *button = [self.dataSource toolbar:self buttonAtPosition:i];
+            [self._scrollView addSubview:button];
+            [buttons addObject:button];
+        }
+        self._buttons = buttons;
+    }
 }
 
 
@@ -109,6 +158,9 @@ static CGFloat k_default_button_widht = 80;
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    [self createButtons];
+    
+    self._scrollView.frame = self.frame;
     
     
     

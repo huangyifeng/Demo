@@ -35,7 +35,7 @@
 - (void)initViewComponent
 {
     self._buttonNameLabel = [[[UILabel alloc] init] autorelease];
-    self._buttonNameLabel.textAlignment = NSTextAlignmentCenter;
+    self._buttonNameLabel.textAlignment = UITextAlignmentCenter;
     self._buttonNameLabel.textColor = [UIColor blackColor];
     
     self._buttonImageView = [[[UIImageView alloc] init] autorelease];

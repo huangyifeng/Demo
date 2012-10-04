@@ -21,6 +21,7 @@
     //model
     id<ScrollToolbarDelegate>   _delegate;
     id<ScrollToolbarDataSource> _dataSource;
+    NSInteger                   _numberOfButtons;
     NSInteger                   _selectedButtonIndex;
 }
 
