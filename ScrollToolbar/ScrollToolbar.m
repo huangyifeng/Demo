@@ -19,13 +19,14 @@ static CGFloat k_default_scroll_duration = 0.3;
 
 //View
 @property(nonatomic, retain)UIScrollView    *_scrollView;
+@property(nonatomic, retain)UIView          *_bkView;
 @property(nonatomic, retain)UIView          *_arrowView;
 
 //model
-@property(nonatomic, assign)CGFloat         _buttonWidth;
+@property(nonatomic, assign)CGFloat          _buttonWidth;
 @property(nonatomic, retain)NSArray         *_buttons;
-@property(nonatomic, assign)NSInteger       _numberOfButtons;
-@property(nonatomic, assign)NSInteger       _selectedButtonIndex;
+@property(nonatomic, assign)NSInteger        _numberOfButtons;
+@property(nonatomic, assign)NSInteger        _selectedButtonIndex;
 
 //view
 - (void)initComponent;
@@ -33,8 +34,11 @@ static CGFloat k_default_scroll_duration = 0.3;
 - (void)createAndLayoutButtons;
 
 //action
-- (void)arrowMoveToIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
-- (void)__arrowMoveToIndex:(NSInteger)buttonIndex;
+- (void)moveArrowToIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
+- (void)__moveArrowToIndex:(NSInteger)buttonIndex;
+- (void)moveScrollViewToCenter:(NSInteger)buttonIndex animated:(BOOL)animated;
+- (void)__moveScrollViewToCenter:(NSInteger)buttonIndex;
+- (void)toolbarButtonTapped:(id)sender;
 
 @end
 
@@ -42,6 +46,7 @@ static CGFloat k_default_scroll_duration = 0.3;
 
 //View
 @synthesize _scrollView = _scrollView;
+@synthesize _bkView     = _bkView;
 @synthesize _arrowView  = _arrowView;
 @synthesize _buttons    = _buttons;
 
@@ -54,9 +59,10 @@ static CGFloat k_default_scroll_duration = 0.3;
 
 - (void)dealloc
 {
-    [_scrollView release]; _scrollView = nil;
-    [_arrowView release];  _arrowView = nil;
-    [_buttons release]; _buttons = nil;
+    [_scrollView release];  _scrollView = nil;
+    [_arrowView release];   _arrowView = nil;
+    [_bkView release];      _bkView = nil;
+    [_buttons release];     _buttons = nil;
     [super dealloc];
 }
 
@@ -64,7 +70,6 @@ static CGFloat k_default_scroll_duration = 0.3;
 
 - (void)initComponent
 {
-    self.backgroundColor = [UIColor blueColor];
     
     self._scrollView = [[[UIScrollView alloc] init] autorelease];
     self._scrollView.showsHorizontalScrollIndicator = NO;
@@ -73,9 +78,13 @@ static CGFloat k_default_scroll_duration = 0.3;
     self._scrollView.multipleTouchEnabled = NO;
     self._scrollView.bounces = YES;
     
-    self._arrowView = [[[UIView alloc] init] autorelease];
-    self._arrowView.backgroundColor = [UIColor lightGrayColor];
+    self._bkView = [[[UIView alloc] init] autorelease];
     
+    self._arrowView = [[[UIView alloc] init] autorelease];
+    
+    self.backgroundColor = [UIColor lightGrayColor];
+    
+    [self addSubview:self._bkView];
     [self addSubview:self._scrollView];
     [self._scrollView addSubview:self._arrowView];
 }
@@ -98,7 +107,7 @@ static CGFloat k_default_scroll_duration = 0.3;
     return self;
 }
 
-#pragma mark - private
+#pragma mark - private view
 
 - (void)loadLayoutParam
 {
@@ -107,33 +116,6 @@ static CGFloat k_default_scroll_duration = 0.3;
     if ([self.dataSource respondsToSelector:@selector(numberOfButtonInToolbar:)])
     {
         self._numberOfButtons = [self.dataSource numberOfButtonInToolbar:self];
-    }
-}
-
-- (void)arrowMoveToIndex:(NSInteger)buttonIndex animated:(BOOL)animated
-{
-    if(animated)
-    {
-        [UIView animateWithDuration:k_default_scroll_duration animations:^{
-            [self __arrowMoveToIndex:buttonIndex];
-        }];
-    }
-    else
-    {
-        [self __arrowMoveToIndex:buttonIndex];
-    }
-}
-
-- (void)__arrowMoveToIndex:(NSInteger)buttonIndex
-{
-    if (-1 < buttonIndex && buttonIndex < [self._buttons count])
-    {
-        UIView *button = [self._buttons objectAtIndex:buttonIndex];
-        CGPoint buttonPoint = button.frame.origin;
-        CGSize  buttonSize = button.frame.size;
-        CGRect  arrowFrame = self._arrowView.frame;
-        CGFloat dx = (buttonPoint.x + buttonSize.width / 2 - arrowFrame.size.width / 2) - arrowFrame.origin.x;
-        self._arrowView.frame = CGRectOffset(arrowFrame, dx, 0);
     }
 }
 
@@ -153,6 +135,7 @@ static CGFloat k_default_scroll_duration = 0.3;
         for (int i = 0; i < self._numberOfButtons; i++)
         {
             ScrollToolbarButton *button = [self.dataSource toolbar:self buttonAtPosition:i];
+            [button addTarget:self action:@selector(toolbarButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
             
             CGFloat buttonWidth = k_default_button_width;
             if([self.delegate respondsToSelector:@selector(toolbar:widthForButtonAtPosition:)])
@@ -171,6 +154,72 @@ static CGFloat k_default_scroll_duration = 0.3;
     [self._scrollView setContentSize:CGSizeMake(occupiedWidth, self.frame.size.height)];
 }
 
+#pragma mark - private aciton
+
+- (void)moveArrowToIndex:(NSInteger)buttonIndex animated:(BOOL)animated
+{
+    if(animated)
+    {
+        [UIView animateWithDuration:k_default_scroll_duration animations:^{
+            [self __moveArrowToIndex:buttonIndex];
+        }];
+    }
+    else
+    {
+        [self __moveArrowToIndex:buttonIndex];
+    }
+}
+
+- (void)__moveArrowToIndex:(NSInteger)buttonIndex
+{
+    if (-1 < buttonIndex && buttonIndex < [self._buttons count])
+    {
+        UIView *button = [self._buttons objectAtIndex:buttonIndex];
+        CGPoint buttonPoint = button.frame.origin;
+        CGSize  buttonSize = button.frame.size;
+        CGRect  arrowFrame = self._arrowView.frame;
+        CGFloat dx = (buttonPoint.x + buttonSize.width / 2 - arrowFrame.size.width / 2) - arrowFrame.origin.x;
+        self._arrowView.frame = CGRectOffset(arrowFrame, dx, 0);
+    }
+}
+
+- (void)moveScrollViewToCenter:(NSInteger)buttonIndex animated:(BOOL)animated
+{
+    if(animated)
+    {
+        [UIView animateWithDuration:k_default_scroll_duration animations:^{
+            [self __moveScrollViewToCenter:buttonIndex];
+        }];
+    }
+    else
+    {
+        [self __moveScrollViewToCenter:buttonIndex];
+    }
+}
+
+- (void)__moveScrollViewToCenter:(NSInteger)buttonIndex
+{
+    CGFloat minValue = 0;
+    CGFloat maxValue = self._scrollView.contentSize.width - self._scrollView.frame.size.width;
+    
+    ScrollToolbarButton *button = [self._buttons objectAtIndex:buttonIndex];
+    CGFloat left = (self._scrollView.frame.size.width - button.frame.size.width) / 2;
+    CGFloat x = MIN(maxValue, MAX(button.frame.origin.x - left, minValue));
+    [self._scrollView setContentOffset:CGPointMake(x, 0) animated:NO];
+}
+
+- (void)toolbarButtonTapped:(id)sender
+{
+    NSInteger buttonIndex = [self._buttons indexOfObject:sender];
+    [self moveArrowToIndex:buttonIndex animated:YES];
+    [self moveScrollViewToCenter:buttonIndex animated:YES];
+    
+    if ([self.delegate respondsToSelector:@selector(toolbar:didTapButtonAtPosition:)])
+    {
+        [self.delegate toolbar:self didTapButtonAtPosition:buttonIndex];
+    }
+}
+
 #pragma mark - override
 
 - (void)layoutSubviews
@@ -184,9 +233,20 @@ static CGFloat k_default_scroll_duration = 0.3;
     //layout button
     [self createAndLayoutButtons];
     
+    //layout background view;
+    self._bkView.frame = CGRectMake(0, k_default_arrow_height, self.frame.size.width, self.frame.size.height - k_default_arrow_height);
+    
     //layout arrow view
     self._arrowView.frame = CGRectMake(0, 0, k_default_arrow_width, k_default_arrow_height);
-    [self arrowMoveToIndex:self._selectedButtonIndex animated:NO];
+    [self moveArrowToIndex:self._selectedButtonIndex animated:NO];
+}
+
+- (void)setBackgroundColor:(UIColor *)backgroundColor
+{
+    [super setBackgroundColor:[UIColor clearColor]];
+    [self._scrollView setBackgroundColor:[UIColor clearColor]];
+    [self._bkView setBackgroundColor:backgroundColor];
+    [self._arrowView setBackgroundColor:backgroundColor];
 }
 
 @end

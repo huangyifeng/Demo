@@ -32,11 +32,12 @@
 
 - (void)initViewComponent
 {
-    self.backgroundColor = [UIColor lightGrayColor];
+    self.backgroundColor = [UIColor clearColor];
     
     self._buttonNameLabel = [[[UILabel alloc] init] autorelease];
     self._buttonNameLabel.textAlignment = UITextAlignmentCenter;
     self._buttonNameLabel.textColor = [UIColor blackColor];
+//    self._buttonNameLabel.backgroundColor = [UIColor clearColor];
     
     self._buttonImageView = [[[UIImageView alloc] init] autorelease];
     
@@ -82,7 +83,7 @@
     self._buttonNameLabel.text = self.toolbarItem.title;
     self._buttonImageView.image = [UIImage imageNamed:self.toolbarItem.image];
     
-    self._buttonNameLabel.frame = CGRectMake(0, 0, 50, 20);
+    self._buttonNameLabel.frame = CGRectMake(7, 10, 50, 20);
 }
 
 @end

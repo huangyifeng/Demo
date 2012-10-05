@@ -64,7 +64,6 @@
     return [[[ScrollToolbarButton alloc] initWithToolbarItem:item] autorelease];
 }
 
-
 #pragma mark - ScrollToolbarDelegate
 
 @end

@@ -14,6 +14,7 @@
 {
     //View
     UIScrollView    *_scrollView;
+    UIView          *_bkView;
     UIView          *_arrowView;
     
     NSArray         *_buttons;

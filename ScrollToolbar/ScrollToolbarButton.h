@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ScrollToolbarButtonItem.h"
 
-@interface ScrollToolbarButton : UIView
+@interface ScrollToolbarButton : UIControl
 {
 @private
     
