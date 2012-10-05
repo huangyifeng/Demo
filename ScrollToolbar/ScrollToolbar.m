@@ -70,7 +70,6 @@ static CGFloat k_default_scroll_duration = 0.3;
 
 - (void)initComponent
 {
-    
     self._scrollView = [[[UIScrollView alloc] init] autorelease];
     self._scrollView.showsHorizontalScrollIndicator = NO;
     self._scrollView.showsVerticalScrollIndicator = NO;

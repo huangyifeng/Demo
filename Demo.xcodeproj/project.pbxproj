@@ -41,6 +41,14 @@
 		C4725F7C160A09C10072E322 /* ScrollToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F7B160A09C10072E322 /* ScrollToolbar.m */; };
 		C4725F82160A21D00072E322 /* ScrollToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F81160A21D00072E322 /* ScrollToolbarButton.m */; };
 		C4725F8A160A25A10072E322 /* ScrollToolbarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4725F89160A25A00072E322 /* ScrollToolbarButtonItem.m */; };
+		C4E12662161EE55300F14383 /* Item1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E12660161EE55300F14383 /* Item1ViewController.m */; };
+		C4E12663161EE55300F14383 /* Item1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E12661161EE55300F14383 /* Item1ViewController.xib */; };
+		C4E12667161EE56300F14383 /* Item2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E12665161EE56300F14383 /* Item2ViewController.m */; };
+		C4E12668161EE56300F14383 /* Item2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E12666161EE56300F14383 /* Item2ViewController.xib */; };
+		C4E1266C161EE5B600F14383 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E1266A161EE5B600F14383 /* Item3ViewController.m */; };
+		C4E1266D161EE5B600F14383 /* Item3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E1266B161EE5B600F14383 /* Item3ViewController.xib */; };
+		C4E12671161EE5CB00F14383 /* ItemOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E1266F161EE5CB00F14383 /* ItemOtherViewController.m */; };
+		C4E12672161EE5CB00F14383 /* ItemOtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E12670161EE5CB00F14383 /* ItemOtherViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +118,18 @@
 		C4725F84160A24C60072E322 /* ScrollToolbarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollToolbarDelegate.h; sourceTree = "<group>"; };
 		C4725F88160A25A00072E322 /* ScrollToolbarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollToolbarButtonItem.h; sourceTree = "<group>"; };
 		C4725F89160A25A00072E322 /* ScrollToolbarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollToolbarButtonItem.m; sourceTree = "<group>"; };
+		C4E1265F161EE55300F14383 /* Item1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item1ViewController.h; sourceTree = "<group>"; };
+		C4E12660161EE55300F14383 /* Item1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item1ViewController.m; sourceTree = "<group>"; };
+		C4E12661161EE55300F14383 /* Item1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item1ViewController.xib; sourceTree = "<group>"; };
+		C4E12664161EE56300F14383 /* Item2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item2ViewController.h; sourceTree = "<group>"; };
+		C4E12665161EE56300F14383 /* Item2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item2ViewController.m; sourceTree = "<group>"; };
+		C4E12666161EE56300F14383 /* Item2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item2ViewController.xib; sourceTree = "<group>"; };
+		C4E12669161EE5B600F14383 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
+		C4E1266A161EE5B600F14383 /* Item3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
+		C4E1266B161EE5B600F14383 /* Item3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Item3ViewController.xib; sourceTree = "<group>"; };
+		C4E1266E161EE5CB00F14383 /* ItemOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemOtherViewController.h; sourceTree = "<group>"; };
+		C4E1266F161EE5CB00F14383 /* ItemOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemOtherViewController.m; sourceTree = "<group>"; };
+		C4E12670161EE5CB00F14383 /* ItemOtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOtherViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +285,7 @@
 		C4725F4B1609FEA30072E322 /* ScrollToolbar */ = {
 			isa = PBXGroup;
 			children = (
+				C4E1265D161EE51E00F14383 /* Controllers */,
 				C4725F791609FF870072E322 /* Toolbar */,
 				C4725F541609FEA30072E322 /* AppDelegate.h */,
 				C4725F551609FEA30072E322 /* AppDelegate.m */,
@@ -318,6 +339,25 @@
 				C4725F84160A24C60072E322 /* ScrollToolbarDelegate.h */,
 			);
 			name = Toolbar;
+			sourceTree = "<group>";
+		};
+		C4E1265D161EE51E00F14383 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4E1265F161EE55300F14383 /* Item1ViewController.h */,
+				C4E12660161EE55300F14383 /* Item1ViewController.m */,
+				C4E12661161EE55300F14383 /* Item1ViewController.xib */,
+				C4E12664161EE56300F14383 /* Item2ViewController.h */,
+				C4E12665161EE56300F14383 /* Item2ViewController.m */,
+				C4E12666161EE56300F14383 /* Item2ViewController.xib */,
+				C4E12669161EE5B600F14383 /* Item3ViewController.h */,
+				C4E1266A161EE5B600F14383 /* Item3ViewController.m */,
+				C4E1266B161EE5B600F14383 /* Item3ViewController.xib */,
+				C4E1266E161EE5CB00F14383 /* ItemOtherViewController.h */,
+				C4E1266F161EE5CB00F14383 /* ItemOtherViewController.m */,
+				C4E12670161EE5CB00F14383 /* ItemOtherViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +489,10 @@
 			files = (
 				C4725F501609FEA30072E322 /* InfoPlist.strings in Resources */,
 				C4725F5C1609FEA30072E322 /* ViewController.xib in Resources */,
+				C4E12663161EE55300F14383 /* Item1ViewController.xib in Resources */,
+				C4E12668161EE56300F14383 /* Item2ViewController.xib in Resources */,
+				C4E1266D161EE5B600F14383 /* Item3ViewController.xib in Resources */,
+				C4E12672161EE5CB00F14383 /* ItemOtherViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +555,10 @@
 				C4725F7C160A09C10072E322 /* ScrollToolbar.m in Sources */,
 				C4725F82160A21D00072E322 /* ScrollToolbarButton.m in Sources */,
 				C4725F8A160A25A10072E322 /* ScrollToolbarButtonItem.m in Sources */,
+				C4E12662161EE55300F14383 /* Item1ViewController.m in Sources */,
+				C4E12667161EE56300F14383 /* Item2ViewController.m in Sources */,
+				C4E1266C161EE5B600F14383 /* Item3ViewController.m in Sources */,
+				C4E12671161EE5CB00F14383 /* ItemOtherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,6 +891,7 @@
 				C4725F731609FEA30072E322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4725F771609FEA30072E322 /* Build configuration list for PBXNativeTarget "ScrollToolbarTests" */ = {
 			isa = XCConfigurationList;
@@ -851,6 +900,7 @@
 				C4725F751609FEA30072E322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

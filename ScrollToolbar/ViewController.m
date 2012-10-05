@@ -19,10 +19,12 @@
 @implementation ViewController
 
 @synthesize scrollToolbarItems = _scrollToolbarItems;
+@synthesize contentView;
 
 - (void)dealloc
 {
     [_scrollToolbarItems release]; _scrollToolbarItems = nil;
+    [contentView release]; contentView = nil;
     [super dealloc];
 }
 
@@ -38,6 +40,9 @@
         [items addObject:buttonItem];
     }
     self.scrollToolbarItems = items;
+    
+    UIViewController *controller = [[[UIViewController alloc] initWithNibName:@"Item1ViewController" bundle:nil] autorelease];
+    [self.contentView addSubview:controller.view];
 }
 
 - (void)viewDidUnload
@@ -65,5 +70,25 @@
 }
 
 #pragma mark - ScrollToolbarDelegate
+
+- (void)toolbar:(ScrollToolbar *)toolbar didTapButtonAtPosition:(NSInteger)position
+{
+    UIViewController *controller = nil;
+    
+    if (position < 3)
+    {
+        controller = [[[UIViewController alloc] initWithNibName:[NSString stringWithFormat:@"Item%dViewController", position + 1] bundle:nil] autorelease];
+    }
+    else
+    {
+        controller = [[[UIViewController alloc] initWithNibName:@"ItemOtherViewController" bundle:nil] autorelease];
+    }
+    
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [obj removeFromSuperview];
+    }];
+    
+    [self.contentView addSubview:controller.view];
+}
 
 @end

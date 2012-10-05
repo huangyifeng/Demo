@@ -15,4 +15,6 @@
     NSArray  *_scrollToolbarItems;
 }
 
+@property(nonatomic, retain)IBOutlet UIView *contentView;
+
 @end
