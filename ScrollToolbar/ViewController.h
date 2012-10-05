@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollToolbarDelegate.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ScrollToolbarDataSource, ScrollToolbarDelegate>
+{
+@private
+    NSArray  *_scrollToolbarItems;
+}
 
 @end

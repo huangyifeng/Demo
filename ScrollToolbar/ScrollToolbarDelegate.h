@@ -13,6 +13,7 @@
 
 @protocol ScrollToolbarDataSource <NSObject>
 
+@required
 - (NSInteger)numberOfButtonInToolbar:(ScrollToolbar *)toolbar;
 - (ScrollToolbarButton *)toolbar:(ScrollToolbar *)toolbar buttonAtPosition:(NSInteger)position;
 
@@ -20,7 +21,9 @@
 
 @protocol ScrollToolbarDelegate <NSObject>
 
+@optional
 - (void)toolbar:(ScrollToolbar *)toolbar didTapButtonAtPosition:(NSInteger)position;
+//defult is 64;
 - (CGFloat)toolbar:(ScrollToolbar *)toolbar widthForButtonAtPosition:(NSInteger)position;
 
 @end

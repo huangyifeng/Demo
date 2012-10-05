@@ -25,8 +25,8 @@
     NSInteger                   _selectedButtonIndex;
 }
 
-@property(nonatomic, assign)id<ScrollToolbarDelegate>   delegate;
-@property(nonatomic, assign)id<ScrollToolbarDataSource> dataSource;
+@property(nonatomic, assign)IBOutlet id<ScrollToolbarDelegate>   delegate;
+@property(nonatomic, assign)IBOutlet id<ScrollToolbarDataSource> dataSource;
 
 
 @end
