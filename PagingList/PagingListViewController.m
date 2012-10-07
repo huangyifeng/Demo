@@ -22,6 +22,8 @@
 - (void)initModalComponent;
 - (void)loadScrollViewWithPage:(NSInteger)pageIndex;
 - (void)refreshScrollViewSize;
+- (void)removeSurplusView;
+- (void)__removePage:(NSInteger)pageIndex;
 
 @end
 
@@ -139,6 +141,27 @@
     [self._scrollView setContentSize:CGSizeMake(scrollSize.width * self._pageCount, scrollSize.height)];
 }
 
+
+
+- (void)removeSurplusView
+{
+    [self __removePage:self._currentPageIndex - 2];
+    [self __removePage:self._currentPageIndex + 2];
+}
+
+- (void)__removePage:(NSInteger)pageIndex
+{
+    if (pageIndex < 0 || self._pageCount <= pageIndex)
+    {
+        return;
+    }
+    UIViewController *controller = [self._controllerCache objectForKey:[NSNumber numberWithInteger:pageIndex]];
+    if (controller && controller.view.superview)
+    {
+        [controller.view removeFromSuperview];
+    }
+}
+
 #pragma mark - public
 
 - (void)scrollTo:(NSInteger)pageIndex
@@ -194,6 +217,7 @@
     {
         [self loadScrollViewWithPage:self._currentPageIndex];
     }
+    [self removeSurplusView];
     
     [self pageChanged:self._currentPageIndex];
 }
