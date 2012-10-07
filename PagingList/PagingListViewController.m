@@ -29,9 +29,10 @@
 
 @synthesize _scrollView = _scrollView;
 
-@synthesize _currentPageIndex = _currentPageIndex;
-@synthesize _pageCount        = _pageCount;
-@synthesize _controllerCache = _controllerCache;
+@synthesize _currentPageIndex   = _currentPageIndex;
+@synthesize _pageCount          = _pageCount;
+@synthesize _controllerCache    = _controllerCache;
+@synthesize loadPolicy          = _loadPolicy;
 
 - (void)dealloc
 {
@@ -81,17 +82,23 @@
 {
     [super viewDidLoad];
 	[self initModalComponent];
-    [self refreshScrollViewSize];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self refreshScrollViewSize];
     
-    [self loadScrollViewWithPage:self._currentPageIndex - 1];
-    [self loadScrollViewWithPage:self._currentPageIndex];
-    [self loadScrollViewWithPage:self._currentPageIndex + 1];
-    
+    if (PagingListLoadNeighbor == self.loadPolicy)
+    {
+        [self loadScrollViewWithPage:self._currentPageIndex - 1];
+        [self loadScrollViewWithPage:self._currentPageIndex];
+        [self loadScrollViewWithPage:self._currentPageIndex + 1];
+    }
+    else if (PagingListLoadOnlySelf == self.loadPolicy)
+    {
+        [self loadScrollViewWithPage:self._currentPageIndex];
+    }
 }
 
 - (void)viewDidUnload
@@ -132,6 +139,25 @@
     [self._scrollView setContentSize:CGSizeMake(scrollSize.width * self._pageCount, scrollSize.height)];
 }
 
+#pragma mark - public
+
+- (void)scrollTo:(NSInteger)pageIndex
+{
+    [self scrollTo:pageIndex animated:YES];
+}
+
+- (void)scrollTo:(NSInteger)pageIndex animated:(BOOL)animated
+{
+    CGFloat offset = self._scrollView.frame.size.width * pageIndex;
+    [self._scrollView setContentOffset:CGPointMake(offset, 0) animated:animated];
+}
+
+- (NSInteger)currentPageIndex
+{
+    self._currentPageIndex = floor(self._scrollView.contentOffset.x / self._scrollView.frame.size.width);
+    return self._currentPageIndex;
+}
+
 #pragma mark - for override
 
 -(UIViewController *)controllerWithPage:(NSInteger)pageIndex
@@ -146,15 +172,30 @@
     return 0;
 }
 
+- (void)pageChanged:(NSInteger)pageIndex
+{
+    //Recommend Override
+}
+
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat width = scrollView.frame.size.width;
     self._currentPageIndex = floor(self._scrollView.contentOffset.x / width);
-    [self loadScrollViewWithPage:self._currentPageIndex - 1];
-    [self loadScrollViewWithPage:self._currentPageIndex];
-    [self loadScrollViewWithPage:self._currentPageIndex + 1];
+    
+    if (PagingListLoadNeighbor == self.loadPolicy)
+    {
+        [self loadScrollViewWithPage:self._currentPageIndex - 1];
+        [self loadScrollViewWithPage:self._currentPageIndex];
+        [self loadScrollViewWithPage:self._currentPageIndex + 1];
+    }
+    else if (PagingListLoadOnlySelf == self.loadPolicy)
+    {
+        [self loadScrollViewWithPage:self._currentPageIndex];
+    }
+    
+    [self pageChanged:self._currentPageIndex];
 }
 
 @end

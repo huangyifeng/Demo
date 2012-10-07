@@ -84,11 +84,14 @@
         controller = [[[UIViewController alloc] initWithNibName:@"ItemOtherViewController" bundle:nil] autorelease];
     }
     
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [obj removeFromSuperview];
-    }];
+//    [self.contentView.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//        [obj removeFromSuperview];
+//    }];
+//    
+//    [self.contentView addSubview:controller.view];
     
-    [self.contentView addSubview:controller.view];
+    UIViewAnimationOptions options = UIViewAnimationOptionTransitionCurlUp;
+    [UIView transitionFromView:[self.contentView.subviews objectAtIndex:0] toView:controller.view duration:0.5 options:options completion:nil];
 }
 
 @end

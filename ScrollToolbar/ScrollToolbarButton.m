@@ -20,9 +20,12 @@
 @implementation ScrollToolbarButton
 
 @synthesize toolbarItem = _toolbarItem;
+@synthesize _buttonNameLabel = _buttonNameLabel;
+@synthesize _buttonImageView = _buttonImageView;
 
 - (void)dealloc
 {
+    [_toolbarItem release]; _toolbarItem = nil;
     [_buttonNameLabel release]; _buttonNameLabel = nil;
     [_buttonImageView release]; _buttonImageView = nil;
     [super dealloc];
