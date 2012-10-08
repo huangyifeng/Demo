@@ -25,6 +25,17 @@
 		BB6D99A415F5AEE600D1F63B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99A315F5AEE600D1F63B /* ViewController.m */; };
 		BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6D99A515F5AEE600D1F63B /* ViewController.xib */; };
 		BB6D99AF15F5B10700D1F63B /* PagingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */; };
+		BB8361911622D9A700382216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
+		BB8361921622D9A700382216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
+		BB8361931622D9A700382216 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
+		BB8361991622D9A700382216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB8361971622D9A700382216 /* InfoPlist.strings */; };
+		BB83619B1622D9A700382216 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB83619A1622D9A700382216 /* main.m */; };
+		BB83619F1622D9A700382216 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB83619E1622D9A700382216 /* AppDelegate.m */; };
+		BB8361A11622D9A700382216 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8361A01622D9A700382216 /* Default.png */; };
+		BB8361A31622D9A700382216 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8361A21622D9A700382216 /* Default@2x.png */; };
+		BB8361A51622D9A700382216 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8361A41622D9A700382216 /* Default-568h@2x.png */; };
+		BB8361A81622D9A700382216 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8361A71622D9A700382216 /* ViewController.m */; };
+		BB8361AB1622D9A700382216 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8361A91622D9A700382216 /* ViewController.xib */; };
 		C4725F481609FEA30072E322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
 		C4725F491609FEA30072E322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
 		C4725F4A1609FEA30072E322 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
@@ -95,6 +106,19 @@
 		BB6D99A615F5AEE600D1F63B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		BB6D99AD15F5B10700D1F63B /* PagingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingListViewController.h; sourceTree = "<group>"; };
 		BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingListViewController.m; sourceTree = "<group>"; };
+		BB83618F1622D9A700382216 /* LauncherView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauncherView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8361961622D9A700382216 /* LauncherView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LauncherView-Info.plist"; sourceTree = "<group>"; };
+		BB8361981622D9A700382216 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB83619A1622D9A700382216 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB83619C1622D9A700382216 /* LauncherView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LauncherView-Prefix.pch"; sourceTree = "<group>"; };
+		BB83619D1622D9A700382216 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB83619E1622D9A700382216 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB8361A01622D9A700382216 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BB8361A21622D9A700382216 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BB8361A41622D9A700382216 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BB8361A61622D9A700382216 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB8361A71622D9A700382216 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB8361AA1622D9A700382216 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		C4725F461609FEA30072E322 /* ScrollToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4725F4D1609FEA30072E322 /* ScrollToolbar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollToolbar-Info.plist"; sourceTree = "<group>"; };
 		C4725F4F1609FEA30072E322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -151,6 +175,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB83618C1622D9A700382216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8361911622D9A700382216 /* UIKit.framework in Frameworks */,
+				BB8361921622D9A700382216 /* Foundation.framework in Frameworks */,
+				BB8361931622D9A700382216 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4725F431609FEA30072E322 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +215,7 @@
 				BB6D999615F5AEE600D1F63B /* PagingList */,
 				C4725F4B1609FEA30072E322 /* ScrollToolbar */,
 				C4725F691609FEA30072E322 /* ScrollToolbarTests */,
+				BB8361941622D9A700382216 /* LauncherView */,
 				BB0FA58915D4FC6200246A5E /* Frameworks */,
 				BB0FA58715D4FC6200246A5E /* Products */,
 			);
@@ -193,6 +228,7 @@
 				BB6D998E15F5AEE600D1F63B /* PagingList.app */,
 				C4725F461609FEA30072E322 /* ScrollToolbar.app */,
 				C4725F621609FEA30072E322 /* ScrollToolbarTests.octest */,
+				BB83618F1622D9A700382216 /* LauncherView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +316,41 @@
 				BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BB8361941622D9A700382216 /* LauncherView */ = {
+			isa = PBXGroup;
+			children = (
+				BB8361AF1622D9E000382216 /* LauncherView */,
+				BB83619D1622D9A700382216 /* AppDelegate.h */,
+				BB83619E1622D9A700382216 /* AppDelegate.m */,
+				BB8361A61622D9A700382216 /* ViewController.h */,
+				BB8361A71622D9A700382216 /* ViewController.m */,
+				BB8361A91622D9A700382216 /* ViewController.xib */,
+				BB8361951622D9A700382216 /* Supporting Files */,
+			);
+			path = LauncherView;
+			sourceTree = "<group>";
+		};
+		BB8361951622D9A700382216 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB8361961622D9A700382216 /* LauncherView-Info.plist */,
+				BB8361971622D9A700382216 /* InfoPlist.strings */,
+				BB83619A1622D9A700382216 /* main.m */,
+				BB83619C1622D9A700382216 /* LauncherView-Prefix.pch */,
+				BB8361A01622D9A700382216 /* Default.png */,
+				BB8361A21622D9A700382216 /* Default@2x.png */,
+				BB8361A41622D9A700382216 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB8361AF1622D9E000382216 /* LauncherView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LauncherView;
 			sourceTree = "<group>";
 		};
 		C4725F4B1609FEA30072E322 /* ScrollToolbar */ = {
@@ -397,6 +468,23 @@
 			productReference = BB6D998E15F5AEE600D1F63B /* PagingList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB83618E1622D9A700382216 /* LauncherView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8361AC1622D9A700382216 /* Build configuration list for PBXNativeTarget "LauncherView" */;
+			buildPhases = (
+				BB83618B1622D9A700382216 /* Sources */,
+				BB83618C1622D9A700382216 /* Frameworks */,
+				BB83618D1622D9A700382216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LauncherView;
+			productName = LauncherView;
+			productReference = BB83618F1622D9A700382216 /* LauncherView.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C4725F451609FEA30072E322 /* ScrollToolbar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4725F761609FEA30072E322 /* Build configuration list for PBXNativeTarget "ScrollToolbar" */;
@@ -458,6 +546,7 @@
 				BB6D998D15F5AEE600D1F63B /* PagingList */,
 				C4725F451609FEA30072E322 /* ScrollToolbar */,
 				C4725F611609FEA30072E322 /* ScrollToolbarTests */,
+				BB83618E1622D9A700382216 /* LauncherView */,
 			);
 		};
 /* End PBXProject section */
@@ -480,6 +569,18 @@
 				BB6D999B15F5AEE600D1F63B /* InfoPlist.strings in Resources */,
 				BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */,
 				BB62FACF15F748F9000E1F6C /* SinglePageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB83618D1622D9A700382216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8361991622D9A700382216 /* InfoPlist.strings in Resources */,
+				BB8361A11622D9A700382216 /* Default.png in Resources */,
+				BB8361A31622D9A700382216 /* Default@2x.png in Resources */,
+				BB8361A51622D9A700382216 /* Default-568h@2x.png in Resources */,
+				BB8361AB1622D9A700382216 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +643,16 @@
 				BB6D99AF15F5B10700D1F63B /* PagingListViewController.m in Sources */,
 				BB62FAC815F7477E000E1F6C /* TestPagingListViewController.m in Sources */,
 				BB62FACE15F748F9000E1F6C /* SinglePageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB83618B1622D9A700382216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB83619B1622D9A700382216 /* main.m in Sources */,
+				BB83619F1622D9A700382216 /* AppDelegate.m in Sources */,
+				BB8361A81622D9A700382216 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +728,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB6D99A615F5AEE600D1F63B /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		BB8361971622D9A700382216 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8361981622D9A700382216 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB8361A91622D9A700382216 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8361AA1622D9A700382216 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
@@ -761,6 +888,54 @@
 			};
 			name = Release;
 		};
+		BB8361AD1622D9A700382216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode4.5/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LauncherView/LauncherView-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "LauncherView/LauncherView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB8361AE1622D9A700382216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode4.5/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LauncherView/LauncherView-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "LauncherView/LauncherView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		C4725F721609FEA30072E322 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -883,6 +1058,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BB8361AC1622D9A700382216 /* Build configuration list for PBXNativeTarget "LauncherView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8361AD1622D9A700382216 /* Debug */,
+				BB8361AE1622D9A700382216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C4725F761609FEA30072E322 /* Build configuration list for PBXNativeTarget "ScrollToolbar" */ = {
 			isa = XCConfigurationList;

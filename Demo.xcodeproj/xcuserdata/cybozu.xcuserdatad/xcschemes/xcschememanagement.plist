@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LauncherView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>PagingList.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>BB6D998D15F5AEE600D1F63B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB83618E1622D9A700382216</key>
 		<dict>
 			<key>primary</key>
 			<true/>
