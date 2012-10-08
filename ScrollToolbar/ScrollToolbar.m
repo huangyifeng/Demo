@@ -12,6 +12,8 @@
 static CGFloat k_default_arrow_height = 20;
 static CGFloat k_default_arrow_width = 20;
 static CGFloat k_default_button_width = 64;
+static CGFloat k_default_hint_width = 10;
+static CGFloat k_default_hint_height = 15;
 static CGFloat k_default_scroll_duration = 0.3;
 
 
@@ -21,6 +23,8 @@ static CGFloat k_default_scroll_duration = 0.3;
 @property(nonatomic, retain)UIScrollView    *_scrollView;
 @property(nonatomic, retain)UIView          *_bkView;
 @property(nonatomic, retain)UIView          *_arrowView;
+@property(nonatomic, retain)UIView          *_leftView;
+@property(nonatomic, retain)UIView          *_rightView;
 
 //model
 @property(nonatomic, assign)CGFloat          _buttonWidth;
@@ -32,6 +36,7 @@ static CGFloat k_default_scroll_duration = 0.3;
 - (void)initComponent;
 - (void)loadLayoutParam;
 - (void)createAndLayoutButtons;
+- (void)refreshHintView;
 
 //action
 - (void)moveArrowToIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
@@ -49,6 +54,8 @@ static CGFloat k_default_scroll_duration = 0.3;
 @synthesize _bkView     = _bkView;
 @synthesize _arrowView  = _arrowView;
 @synthesize _buttons    = _buttons;
+@synthesize _leftView   = _leftView;
+@synthesize _rightView  = _rightView;
 
 //Model
 @synthesize delegate                = _delegate;
@@ -63,6 +70,8 @@ static CGFloat k_default_scroll_duration = 0.3;
     [_arrowView release];   _arrowView = nil;
     [_bkView release];      _bkView = nil;
     [_buttons release];     _buttons = nil;
+    [_leftView release];    _leftView = nil;
+    [_rightView release];   _rightView = nil;
     [super dealloc];
 }
 
@@ -76,16 +85,24 @@ static CGFloat k_default_scroll_duration = 0.3;
     self._scrollView.scrollsToTop = NO;
     self._scrollView.multipleTouchEnabled = NO;
     self._scrollView.bounces = YES;
+    self._scrollView.delegate = self;
     
     self._bkView = [[[UIView alloc] init] autorelease];
     
     self._arrowView = [[[UIView alloc] init] autorelease];
+    
+    self._leftView = [[[UIView alloc] init] autorelease];
+    self._leftView.backgroundColor = [UIColor redColor];
+    self._rightView = [[[UIView alloc] init] autorelease];
+    self._rightView.backgroundColor = [UIColor redColor]; 
     
     self.backgroundColor = [UIColor lightGrayColor];
     
     [self addSubview:self._bkView];
     [self addSubview:self._scrollView];
     [self._scrollView addSubview:self._arrowView];
+    [self addSubview:self._leftView];
+    [self addSubview:self._rightView];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -151,6 +168,12 @@ static CGFloat k_default_scroll_duration = 0.3;
         self._buttons = buttons;
     }
     [self._scrollView setContentSize:CGSizeMake(occupiedWidth, self.frame.size.height)];
+}
+
+- (void)refreshHintView
+{
+    self._leftView.hidden = !(0 < self._scrollView.contentOffset.x);
+    self._rightView.hidden = !(self._scrollView.contentSize.width > self._scrollView.contentOffset.x + self.frame.size.width);
 }
 
 #pragma mark - private aciton
@@ -226,18 +249,27 @@ static CGFloat k_default_scroll_duration = 0.3;
     [super layoutSubviews];
     [self loadLayoutParam];
 
+    CGSize frameSize = self.frame.size;
+    
     //layout scroll view
-    self._scrollView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    self._scrollView.frame = CGRectMake(0, 0, frameSize.width, frameSize.height);
     
     //layout button
     [self createAndLayoutButtons];
     
     //layout background view;
-    self._bkView.frame = CGRectMake(0, k_default_arrow_height, self.frame.size.width, self.frame.size.height - k_default_arrow_height);
+    self._bkView.frame = CGRectMake(0, k_default_arrow_height, frameSize.width, frameSize.height - k_default_arrow_height);
     
     //layout arrow view
     self._arrowView.frame = CGRectMake(0, 0, k_default_arrow_width, k_default_arrow_height);
     [self moveArrowToIndex:self._selectedButtonIndex animated:NO];
+    
+    //layout left and right view
+    CGFloat y = (self._bkView.frame.size.height - k_default_hint_height) / 2 + self._bkView.frame.origin.y;
+    self._leftView.frame = CGRectMake(5, y, k_default_hint_width, k_default_hint_height);
+    self._rightView.frame = CGRectMake(frameSize.width - k_default_hint_width - 5, y, k_default_hint_width, k_default_hint_height);
+    
+    [self refreshHintView];
 }
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor
@@ -247,5 +279,13 @@ static CGFloat k_default_scroll_duration = 0.3;
     [self._bkView setBackgroundColor:backgroundColor];
     [self._arrowView setBackgroundColor:backgroundColor];
 }
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self refreshHintView];
+}
+
 
 @end

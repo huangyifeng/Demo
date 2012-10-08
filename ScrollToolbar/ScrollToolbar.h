@@ -10,12 +10,14 @@
 #import "ScrollToolbarDelegate.h"
 
 
-@interface ScrollToolbar : UIView
+@interface ScrollToolbar : UIView <UIScrollViewDelegate>
 {
     //View
     UIScrollView    *_scrollView;
     UIView          *_bkView;
     UIView          *_arrowView;
+    UIView          *_leftView;
+    UIView          *_rightView;
     
     NSArray         *_buttons;
     
