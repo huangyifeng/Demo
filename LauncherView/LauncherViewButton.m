@@ -1,6 +1,6 @@
 //
 //  LauncherViewButton.m
-//  Gemini
+//  LauncherView
 //
 //  Created by Huang YiFeng on 6/21/12.
 //  Copyright (c) 2012 , Inc. All rights reserved.
@@ -8,16 +8,14 @@
 
 #import "LauncherViewButton.h"
 #import "NSSafelyRelease.h"
-#import "UIColor+GeminiColors.h"
 #import "UIImage+RetinaDisplay.h"
-#import "GeminiDefines.h"
 
 @interface LauncherViewButton ()
 
 @property(nonatomic, retain) UIButton   *_bodyButton;
 @property(nonatomic, retain) UIButton   *_deleteButton;
 @property(nonatomic, retain) UILabel    *_nameLabel; 
-@property(nonatomic, retain) HomeBadgeView  *_badge;
+@property(nonatomic, retain) LauncherBadgeView  *_badge;
 
 @property(nonatomic, retain)UILongPressGestureRecognizer    *longPressGes;
 
@@ -122,10 +120,9 @@
     self._nameLabel.numberOfLines = 1;
     self._nameLabel.textAlignment = UITextAlignmentCenter;
     self._nameLabel.font = [UIFont systemFontOfSize:10.0];
-    self._nameLabel.textColor = [UIColor geminiColor_102_102_102];
     self._nameLabel.backgroundColor = [UIColor clearColor];
     
-    self._badge = [[[HomeBadgeView alloc] init] autorelease];
+    self._badge = [[[LauncherBadgeView alloc] init] autorelease];
     self._badge.hideWhenZero = YES;
     self._badge.badgeValue = 0;
     self._badge.font = [UIFont boldSystemFontOfSize:12.0];

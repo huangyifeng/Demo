@@ -1,6 +1,6 @@
 //
 //  LauncherViewDelegate.h
-//  Gemini
+//  LauncherView
 //
 //  Created by Huang YiFeng on 6/21/12.
 //  Copyright (c) 2012 Cybozu, Inc. All rights reserved.

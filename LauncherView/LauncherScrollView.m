@@ -1,6 +1,6 @@
 //
 //  LauncherScrollView.m
-//  Gemini
+//  LauncherView
 //
 //  Created by Huang YiFeng on 7/13/12.
 //  Copyright (c) 2012 , Inc. All rights reserved.

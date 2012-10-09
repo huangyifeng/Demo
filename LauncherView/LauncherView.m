@@ -1,6 +1,6 @@
 //
 //  LauncherView.m
-//  Gemini
+//  LauncherView
 //
 //  Created by Huang YiFeng on 6/21/12.
 //  Copyright (c) 2012 , Inc. All rights reserved.
@@ -9,7 +9,7 @@
 #import "LauncherView.h"
 #import "LauncherViewButton.h"
 #import "NSSafelyRelease.h"
-#import "GeminiDefines.h"
+#import "LauncherViewDefines.h"
 #import "UIImage+RetinaDisplay.h"
 
 

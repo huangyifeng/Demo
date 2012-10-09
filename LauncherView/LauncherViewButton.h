@@ -1,6 +1,6 @@
 //
 //  LauncherViewButton.h
-//  Gemini
+//  LauncherView
 //
 //  Created by Huang YiFeng on 6/21/12.
 //  Copyright (c) 2012 , Inc. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LauncherViewButtonDelegate.h"
-#import "HomeBadgeView.h"
+#import "LauncherBadgeView.h"
 
 @interface LauncherViewButton : UIControl
 {
@@ -17,7 +17,7 @@
     UIButton            *_bodyButton;
     UILabel             *_nameLabel;
     UIButton            *_deleteButton;
-    HomeBadgeView       *_badge;
+    LauncherBadgeView       *_badge;
     UIEdgeInsets         _padding;
     UILongPressGestureRecognizer    *_longPressGes;
 //    UIPanGestureRecognizer          *_panGes;
