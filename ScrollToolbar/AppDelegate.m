@@ -3,7 +3,7 @@
 //  ScrollToolbar
 //
 //  Created by huang yifeng on 12-9-19.
-//  Copyright (c) 2012年 Cybozu, Inc. All rights reserved.
+//  Copyright (c) 2012年 , Inc. All rights reserved.
 //
 
 #import "AppDelegate.h"

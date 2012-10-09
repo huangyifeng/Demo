@@ -3,7 +3,7 @@
 //  Demo
 //
 //  Created by huang yifeng on 12-10-5.
-//  Copyright (c) 2012年 Cybozu, Inc. All rights reserved.
+//  Copyright (c) 2012年 , Inc. All rights reserved.
 //
 
 #import "Item1ViewController.h"

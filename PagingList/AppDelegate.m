@@ -3,7 +3,7 @@
 //  PagingList
 //
 //  Created by HuangYiFeng on 9/4/12.
-//  Copyright (c) 2012 Cybozu, Inc. All rights reserved.
+//  Copyright (c) 2012 , Inc. All rights reserved.
 //
 
 #import "AppDelegate.h"

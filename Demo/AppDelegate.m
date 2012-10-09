@@ -3,7 +3,7 @@
 //  Demo
 //
 //  Created by Huang YiFeng on 8/10/12.
-//  Copyright (c) 2012 Cybozu, Inc. All rights reserved.
+//  Copyright (c) 2012 , Inc. All rights reserved.
 //
 
 #import "AppDelegate.h"
