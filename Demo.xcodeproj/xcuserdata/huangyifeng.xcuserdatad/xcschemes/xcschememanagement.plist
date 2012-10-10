@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BalloonMenu.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>LauncherView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>PagingList.xcscheme</key>
 		<dict>
@@ -32,12 +42,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>BB83618E1622D9A700382216</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C4725F451609FEA30072E322</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C4725F611609FEA30072E322</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4D3DE5A1625B7A700C447A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
