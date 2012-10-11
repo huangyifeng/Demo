@@ -16,7 +16,7 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
 
 @interface BalloonMenu()
 
-@property(nonatomic, assign) BOOL _viewFromLeft;
+@property(nonatomic, assign)CGPoint _startPoint;
 
 @end
 
@@ -25,7 +25,7 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
 @synthesize menuItems = _menuItems;
 @synthesize _menuTable;
 @synthesize _menuArrow;
-@synthesize _viewFromLeft;
+@synthesize _startPoint;
 
 - (void)dealloc
 {
@@ -50,13 +50,17 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
 - (void)showBalloonMenu:(UIView *)onView fromPoint:(CGPoint)point
 {
 //    self._viewFromLeft = (point.x < 160);
+    self._startPoint = point;
 
+    //init
     [self._menuTable reloadData];
     [onView addSubview:self.view];
     self.view.alpha = 0;
     self._menuTable.frame = CGRectMake(point.x, point.y, 1, 1);
     self._menuArrow.frame = CGRectMake(point.x, point.y, 1, 1);
 
+    //compute size
+    //table size
     CGFloat headerHeight = self._menuTable.tableHeaderView.frame.size.height;
     CGFloat menuHeight = 0;
     for (UIBarItem *barItem in self.menuItems)
@@ -65,12 +69,13 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     }
     CGFloat footerHeight = self._menuTable.tableFooterView.frame.size.height;
     CGFloat tableHeight = menuHeight + headerHeight + footerHeight;
+    tableHeight = MIN(tableHeight, DEFAULT_MAX_TABLE_HEIGHT);
     
-    //Image  withd , height
+    //Image arrow size
     CGFloat arrowWidth = self._menuArrow.image.size.width;
     CGFloat arrowHeight = self._menuArrow.image.size.height;
-    CGFloat arrowPointY = 407;
 
+    //compute position
     //adjust input point X
     CGFloat minArrowPointX = round(arrowWidth / 2 + 0.5);
     CGFloat maxArrowPointX = 320 - round(arrowWidth / 2 + 0.5);
@@ -88,6 +93,10 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     menuTablePointX = MAX(menuTablePointX, menuTableMinPointX);
     menuTablePointX = MIN(menuTablePointX, menuTableMaxPointX);
     
+    
+    
+    
+    //============
     [UIView beginAnimations:@"open_menu_panel" context:nil];
 
     self.view.alpha = 1;
@@ -123,15 +132,13 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
 
 - (IBAction)closeBalloonMenu
 {
-    [UIView beginAnimations:@"cloase_menu_panel" context:nil];
-
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(_menuClosed)];
-    self._menuTable.frame = CGRectMake(self._viewFromLeft ? 0 : 320, 460, 1, 1);
-    self._menuArrow.frame = CGRectMake(self._viewFromLeft ? 0 : 320, 460, 1, 1);
-    self.view.alpha = 0;
-
-    [UIView commitAnimations];
+    [UIView animateWithDuration:0.2 animations:^{
+        self._menuTable.frame = CGRectMake(self._startPoint.x, self._startPoint.y, 1, 1);
+        self._menuArrow.frame = CGRectMake(self._startPoint.x, self._startPoint.y, 1, 1);
+        self.view.alpha = 0;
+    } completion:^(BOOL finished) {
+        [self _menuClosed];
+    }];
 }
 
 #pragma mark -

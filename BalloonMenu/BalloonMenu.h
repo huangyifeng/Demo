@@ -17,7 +17,7 @@ typedef enum {
     UITableView *_menuTable;
 	UIImageView *_menuArrow;
 
-    BOOL         _viewFromLeft;
+    CGPoint     _startPoint;
 }
 
 @property(nonatomic, retain)          NSArray     *menuItems;
