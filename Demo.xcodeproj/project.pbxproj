@@ -13,6 +13,14 @@
 		BB0FA59B15D4FC6200246A5E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB0FA59915D4FC6200246A5E /* Credits.rtf */; };
 		BB0FA59E15D4FC6200246A5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FA59D15D4FC6200246A5E /* AppDelegate.m */; };
 		BB0FA5A115D4FC6200246A5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0FA59F15D4FC6200246A5E /* MainMenu.xib */; };
+		BB4F7C8716266D5A00532A79 /* BalloonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F7C7B16266D5A00532A79 /* BalloonMenu.m */; };
+		BB4F7C8816266D5A00532A79 /* BalloonMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4F7C7C16266D5A00532A79 /* BalloonMenu.xib */; };
+		BB4F7C8916266D5A00532A79 /* BalloonMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F7C7E16266D5A00532A79 /* BalloonMenuCell.m */; };
+		BB4F7C8A16266D5A00532A79 /* BalloonMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4F7C7F16266D5A00532A79 /* BalloonMenuCell.xib */; };
+		BB4F7C8B16266D5A00532A79 /* BalloonMenuSeparatorBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F7C8116266D5A00532A79 /* BalloonMenuSeparatorBarItem.m */; };
+		BB4F7C8C16266D5A00532A79 /* BalloonMenuSeparatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F7C8316266D5A00532A79 /* BalloonMenuSeparatorCell.m */; };
+		BB4F7C8D16266D5A00532A79 /* BalloonMenuSeparatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4F7C8416266D5A00532A79 /* BalloonMenuSeparatorCell.xib */; };
+		BB4F7C8E16266D5A00532A79 /* PopupBalloonMenuBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F7C8616266D5A00532A79 /* PopupBalloonMenuBarItem.m */; };
 		BB62FAC815F7477E000E1F6C /* TestPagingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62FAC615F7477E000E1F6C /* TestPagingListViewController.m */; };
 		BB62FACE15F748F9000E1F6C /* SinglePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62FACC15F748F9000E1F6C /* SinglePageViewController.m */; };
 		BB62FACF15F748F9000E1F6C /* SinglePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB62FACD15F748F9000E1F6C /* SinglePageViewController.xib */; };
@@ -99,6 +107,19 @@
 		BB0FA59C15D4FC6200246A5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB0FA59D15D4FC6200246A5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB0FA5A015D4FC6200246A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB4F7C7A16266D5A00532A79 /* BalloonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonMenu.h; sourceTree = "<group>"; };
+		BB4F7C7B16266D5A00532A79 /* BalloonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonMenu.m; sourceTree = "<group>"; };
+		BB4F7C7C16266D5A00532A79 /* BalloonMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BalloonMenu.xib; sourceTree = "<group>"; };
+		BB4F7C7D16266D5A00532A79 /* BalloonMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonMenuCell.h; sourceTree = "<group>"; };
+		BB4F7C7E16266D5A00532A79 /* BalloonMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonMenuCell.m; sourceTree = "<group>"; };
+		BB4F7C7F16266D5A00532A79 /* BalloonMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BalloonMenuCell.xib; sourceTree = "<group>"; };
+		BB4F7C8016266D5A00532A79 /* BalloonMenuSeparatorBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonMenuSeparatorBarItem.h; sourceTree = "<group>"; };
+		BB4F7C8116266D5A00532A79 /* BalloonMenuSeparatorBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonMenuSeparatorBarItem.m; sourceTree = "<group>"; };
+		BB4F7C8216266D5A00532A79 /* BalloonMenuSeparatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonMenuSeparatorCell.h; sourceTree = "<group>"; };
+		BB4F7C8316266D5A00532A79 /* BalloonMenuSeparatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonMenuSeparatorCell.m; sourceTree = "<group>"; };
+		BB4F7C8416266D5A00532A79 /* BalloonMenuSeparatorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BalloonMenuSeparatorCell.xib; sourceTree = "<group>"; };
+		BB4F7C8516266D5A00532A79 /* PopupBalloonMenuBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupBalloonMenuBarItem.h; sourceTree = "<group>"; };
+		BB4F7C8616266D5A00532A79 /* PopupBalloonMenuBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupBalloonMenuBarItem.m; sourceTree = "<group>"; };
 		BB62FAC515F7477E000E1F6C /* TestPagingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPagingListViewController.h; sourceTree = "<group>"; };
 		BB62FAC615F7477E000E1F6C /* TestPagingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPagingListViewController.m; sourceTree = "<group>"; };
 		BB62FACB15F748F9000E1F6C /* SinglePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePageViewController.h; sourceTree = "<group>"; };
@@ -501,6 +522,19 @@
 		C4D3DE761625B7B500C447A7 /* BalloonMenu */ = {
 			isa = PBXGroup;
 			children = (
+				BB4F7C7A16266D5A00532A79 /* BalloonMenu.h */,
+				BB4F7C7B16266D5A00532A79 /* BalloonMenu.m */,
+				BB4F7C7C16266D5A00532A79 /* BalloonMenu.xib */,
+				BB4F7C7D16266D5A00532A79 /* BalloonMenuCell.h */,
+				BB4F7C7E16266D5A00532A79 /* BalloonMenuCell.m */,
+				BB4F7C7F16266D5A00532A79 /* BalloonMenuCell.xib */,
+				BB4F7C8016266D5A00532A79 /* BalloonMenuSeparatorBarItem.h */,
+				BB4F7C8116266D5A00532A79 /* BalloonMenuSeparatorBarItem.m */,
+				BB4F7C8216266D5A00532A79 /* BalloonMenuSeparatorCell.h */,
+				BB4F7C8316266D5A00532A79 /* BalloonMenuSeparatorCell.m */,
+				BB4F7C8416266D5A00532A79 /* BalloonMenuSeparatorCell.xib */,
+				BB4F7C8516266D5A00532A79 /* PopupBalloonMenuBarItem.h */,
+				BB4F7C8616266D5A00532A79 /* PopupBalloonMenuBarItem.m */,
 			);
 			name = BalloonMenu;
 			sourceTree = "<group>";
@@ -722,6 +756,9 @@
 			files = (
 				C4D3DE651625B7A700C447A7 /* InfoPlist.strings in Resources */,
 				C4D3DE711625B7A700C447A7 /* ViewController.xib in Resources */,
+				BB4F7C8816266D5A00532A79 /* BalloonMenu.xib in Resources */,
+				BB4F7C8A16266D5A00532A79 /* BalloonMenuCell.xib in Resources */,
+				BB4F7C8D16266D5A00532A79 /* BalloonMenuSeparatorCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +850,11 @@
 				C4D3DE671625B7A700C447A7 /* main.m in Sources */,
 				C4D3DE6B1625B7A700C447A7 /* AppDelegate.m in Sources */,
 				C4D3DE6E1625B7A700C447A7 /* ViewController.m in Sources */,
+				BB4F7C8716266D5A00532A79 /* BalloonMenu.m in Sources */,
+				BB4F7C8916266D5A00532A79 /* BalloonMenuCell.m in Sources */,
+				BB4F7C8B16266D5A00532A79 /* BalloonMenuSeparatorBarItem.m in Sources */,
+				BB4F7C8C16266D5A00532A79 /* BalloonMenuSeparatorCell.m in Sources */,
+				BB4F7C8E16266D5A00532A79 /* PopupBalloonMenuBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1290,6 +1332,7 @@
 				C4D3DE731625B7A700C447A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

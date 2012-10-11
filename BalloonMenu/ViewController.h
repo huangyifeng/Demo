@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)teamButtonPressed:(id)sender;
+
 @end

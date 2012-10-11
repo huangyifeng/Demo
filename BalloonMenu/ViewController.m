@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BalloonMenu.h"
 
 @interface ViewController ()
 
@@ -29,6 +30,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+#pragma mark - IBAction
+
+- (void)teamButtonPressed:(id)sender
+{
+    BalloonMenu *bm = [[[BalloonMenu alloc] initWithNibName:@"BalloonMenu" bundle:nil] autorelease];
+    [bm showBalloonMenu:<#(UIView *)#> arrowPointX:<#(CGFloat)#>]
 }
 
 @end
