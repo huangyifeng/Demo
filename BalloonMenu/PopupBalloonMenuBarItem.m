@@ -29,7 +29,7 @@
     CGRect frame = barButtonView.frame;
     CGFloat centerX = frame.origin.x + frame.size.width / 2;
 
-    [[GeminiAppDelegate rootViewController] showMenu:self.popupToolbar.items arrowPointX:centerX];
+//    [[GeminiAppDelegate rootViewController] showMenu:self.popupToolbar.items arrowPointX:centerX];
 }
 
 @end

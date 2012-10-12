@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+
+
+@property(nonatomic, retain) IBOutlet UIToolbar *_balloonToolbar;
+
 - (IBAction)teamButtonPressed:(id)sender;
 
 @end

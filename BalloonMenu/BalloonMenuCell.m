@@ -20,8 +20,8 @@
 
 - (void)awakeFromNib
 {
-    self.backgroundView = [UIView geminiBackgroundViewWith:@"common_balloon_button"];
-    self.selectedBackgroundView = [UIView geminiBackgroundViewWith:@"common_balloon_button_select"];
+//    self.backgroundView = [UIView geminiBackgroundViewWith:@"common_balloon_button"];
+//    self.selectedBackgroundView = [UIView geminiBackgroundViewWith:@"common_balloon_button_select"];
 }
 
 - (void)setElement:(UIBarItem *)barItem

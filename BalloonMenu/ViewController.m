@@ -37,7 +37,8 @@
 - (void)teamButtonPressed:(id)sender
 {
     BalloonMenu *bm = [[[BalloonMenu alloc] initWithNibName:@"BalloonMenu" bundle:nil] autorelease];
-    [bm showBalloonMenu:<#(UIView *)#> arrowPointX:<#(CGFloat)#>]
+    bm.menuItems = self._balloonToolbar.items;
+    [bm showBalloonMenu:self.view fromPoint:[sender center]];
 }
 
 @end

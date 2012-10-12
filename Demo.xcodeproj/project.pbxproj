@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB05C97316281C9000F81DA6 /* UITableViewCell+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = BB05C97216281C9000F81DA6 /* UITableViewCell+Utility.m */; };
 		BB0FA58B15D4FC6200246A5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0FA58A15D4FC6200246A5E /* Cocoa.framework */; };
 		BB0FA59515D4FC6200246A5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0FA59315D4FC6200246A5E /* InfoPlist.strings */; };
 		BB0FA59715D4FC6200246A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FA59615D4FC6200246A5E /* main.m */; };
@@ -94,6 +95,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB05C97116281C9000F81DA6 /* UITableViewCell+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Utility.h"; sourceTree = "<group>"; };
+		BB05C97216281C9000F81DA6 /* UITableViewCell+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Utility.m"; sourceTree = "<group>"; };
 		BB0FA58615D4FC6200246A5E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0FA58A15D4FC6200246A5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BB0FA58D15D4FC6200246A5E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -522,6 +525,8 @@
 		C4D3DE761625B7B500C447A7 /* BalloonMenu */ = {
 			isa = PBXGroup;
 			children = (
+				BB05C97116281C9000F81DA6 /* UITableViewCell+Utility.h */,
+				BB05C97216281C9000F81DA6 /* UITableViewCell+Utility.m */,
 				BB4F7C7A16266D5A00532A79 /* BalloonMenu.h */,
 				BB4F7C7B16266D5A00532A79 /* BalloonMenu.m */,
 				BB4F7C7C16266D5A00532A79 /* BalloonMenu.xib */,
@@ -855,6 +860,7 @@
 				BB4F7C8B16266D5A00532A79 /* BalloonMenuSeparatorBarItem.m in Sources */,
 				BB4F7C8C16266D5A00532A79 /* BalloonMenuSeparatorCell.m in Sources */,
 				BB4F7C8E16266D5A00532A79 /* PopupBalloonMenuBarItem.m in Sources */,
+				BB05C97316281C9000F81DA6 /* UITableViewCell+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

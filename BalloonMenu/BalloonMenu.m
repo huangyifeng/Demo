@@ -93,36 +93,57 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     menuTablePointX = MAX(menuTablePointX, menuTableMinPointX);
     menuTablePointX = MIN(menuTablePointX, menuTableMaxPointX);
     
+    BOOL isDown = (BallonMenuPopupOrientationDown == self.orientation && SCREEN_HEIGHT < point.y + tableHeight + arrowHeight) || (BallonMenuPopupOrientationUp == self.orientation && point.y - tableHeight - arrowHeight < 0);
     
-    
-    
-    //============
-    [UIView beginAnimations:@"open_menu_panel" context:nil];
-
-    self.view.alpha = 1;
-
-
-
-    if ((SCREEN_HEIGHT - MENTARROW_Y_ORIGIN - tableHeight) >= 0)
+    CGFloat arrowPointY = 0;
+    CGFloat menuTablePointY = 0;
+    if (isDown)
     {
-        self._menuTable.frame = CGRectMake(menuTablePointX, SCREEN_HEIGHT - MENTARROW_Y_ORIGIN - tableHeight, menuTableWidth, tableHeight);
+        arrowPointY = point.y;
+        menuTablePointY = arrowPointY + arrowHeight;
     }
     else
     {
-        self._menuTable.frame = CGRectMake(menuTablePointX, MENTARROW_NOT_INDENT_HEIGHT, menuTableWidth, SCREEN_HEIGHT - MENTARROW_Y_ORIGIN);
-        self._menuTable.scrollEnabled = YES;
-        self._menuTable.contentSize = CGSizeMake(self._menuTable.frame.size.width, tableHeight + MENTARROW_NOT_INDENT_HEIGHT);
-        self._menuTable.scrollsToTop = YES;
-        self._menuTable.bounces = NO;
-        self._menuTable.showsVerticalScrollIndicator = NO;
+        arrowPointY = point.y - arrowHeight;
+        menuTablePointY = arrowPointY - tableHeight;
     }
-
-    //submit 1/2 image width
-    pointX = pointX - round(arrowWidth / 2 + 0.5);
-
-    self._menuArrow.frame =CGRectMake(pointX, arrowPointY, arrowWidth, arrowHeight);
-
-    [UIView commitAnimations];
+    CGFloat arrowPointX = point.x - round(arrowWidth / 2 + 0.5);
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        self.view.alpha = 1;
+        self._menuArrow.frame = CGRectMake(menuTablePointX, menuTablePointY, menuTableWidth, menuTableWidth);
+        self._menuArrow.frame = CGRectMake(arrowPointX, arrowPointY, arrowWidth, arrowHeight);
+    }];
+    
+    
+    //============
+//    [UIView beginAnimations:@"open_menu_panel" context:nil];
+//
+//    self.view.alpha = 1;
+//
+//
+//
+//    if ((SCREEN_HEIGHT - MENTARROW_Y_ORIGIN - tableHeight) >= 0)
+//    {
+//        self._menuTable.frame = CGRectMake(menuTablePointX, SCREEN_HEIGHT - MENTARROW_Y_ORIGIN - tableHeight, menuTableWidth, tableHeight);
+//    }
+//    else
+//    {
+//        self._menuTable.frame = CGRectMake(menuTablePointX, MENTARROW_NOT_INDENT_HEIGHT, menuTableWidth, SCREEN_HEIGHT - MENTARROW_Y_ORIGIN);
+//        self._menuTable.scrollEnabled = YES;
+//        self._menuTable.contentSize = CGSizeMake(self._menuTable.frame.size.width, tableHeight + MENTARROW_NOT_INDENT_HEIGHT);
+//        self._menuTable.scrollsToTop = YES;
+//        self._menuTable.bounces = NO;
+//        self._menuTable.showsVerticalScrollIndicator = NO;
+//    }
+//
+//    //submit 1/2 image width
+//    pointX = pointX - round(arrowWidth / 2 + 0.5);
+//
+//    self._menuArrow.frame =CGRectMake(pointX, arrowPointY, arrowWidth, arrowHeight);
+//
+//    [UIView commitAnimations];
+    //===================
 }
 
 - (void)_menuClosed
