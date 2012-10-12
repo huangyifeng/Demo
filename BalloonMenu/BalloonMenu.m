@@ -5,6 +5,7 @@
 
 #import "BalloonMenu.h"
 
+#import "UITableViewCell+Utility.h"
 #import "BalloonMenuCell.h"
 #import "BalloonMenuSeparatorBarItem.h"
 #import "BalloonMenuSeparatorCell.h"
