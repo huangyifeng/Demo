@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BalloonMenu.h"
 
 @interface ViewController : UIViewController
+{
+@private
+    BalloonMenu *_balloonMenu;
+}
 
 
 

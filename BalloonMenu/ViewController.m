@@ -11,9 +11,19 @@
 
 @interface ViewController ()
 
+@property(nonatomic, retain)BalloonMenu *_balloonMenu;
+
 @end
 
 @implementation ViewController
+
+@synthesize _balloonMenu = _balloonMenu;
+
+- (void)dealloc
+{
+    [_balloonMenu release]; _balloonMenu = nil;
+    [super dealloc];
+}
 
 - (void)viewDidLoad
 {
@@ -36,9 +46,12 @@
 
 - (void)teamButtonPressed:(id)sender
 {
-    BalloonMenu *bm = [[[BalloonMenu alloc] initWithNibName:@"BalloonMenu" bundle:nil] autorelease];
-    bm.menuItems = self._balloonToolbar.items;
-    [bm showBalloonMenu:self.view fromPoint:[sender center]];
+    if (!self._balloonMenu)
+    {
+        self._balloonMenu = [[[BalloonMenu alloc] initWithNibName:@"BalloonMenu" bundle:nil] autorelease];
+    }
+    self._balloonMenu.menuItems = self._balloonToolbar.items;
+    [self._balloonMenu showBalloonMenu:self.view.window fromPoint:[sender center]];
 }
 
 @end

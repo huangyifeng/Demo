@@ -60,6 +60,10 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     self._menuTable.frame = CGRectMake(point.x, point.y, 1, 1);
     self._menuArrow.frame = CGRectMake(point.x, point.y, 1, 1);
 
+    //temp color
+    self._menuArrow.backgroundColor = [UIColor blackColor];
+    self._menuTable.backgroundColor = [UIColor blackColor];
+    
     //compute size
     //table size
     CGFloat headerHeight = self._menuTable.tableHeaderView.frame.size.height;
@@ -73,8 +77,11 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     tableHeight = MIN(tableHeight, DEFAULT_MAX_TABLE_HEIGHT);
     
     //Image arrow size
-    CGFloat arrowWidth = self._menuArrow.image.size.width;
-    CGFloat arrowHeight = self._menuArrow.image.size.height;
+//    CGFloat arrowWidth = self._menuArrow.image.size.width;
+//    CGFloat arrowHeight = self._menuArrow.image.size.height;
+    CGFloat arrowWidth = 20;
+    CGFloat arrowHeight = 20;
+
 
     //compute position
     //adjust input point X
@@ -94,7 +101,7 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     menuTablePointX = MAX(menuTablePointX, menuTableMinPointX);
     menuTablePointX = MIN(menuTablePointX, menuTableMaxPointX);
     
-    BOOL isDown = (BallonMenuPopupOrientationDown == self.orientation && SCREEN_HEIGHT < point.y + tableHeight + arrowHeight) || (BallonMenuPopupOrientationUp == self.orientation && point.y - tableHeight - arrowHeight < 0);
+    BOOL isDown = (BallonMenuPopupOrientationDown == self.orientation && point.y + tableHeight + arrowHeight < SCREEN_HEIGHT) || (BallonMenuPopupOrientationUp == self.orientation && point.y - tableHeight - arrowHeight < 0);
     
     CGFloat arrowPointY = 0;
     CGFloat menuTablePointY = 0;
