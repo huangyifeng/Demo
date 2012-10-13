@@ -54,8 +54,8 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     self._startPoint = point;
 
     //init
-    [self._menuTable reloadData];
     [onView addSubview:self.view];
+    [self._menuTable reloadData];
     self.view.alpha = 0;
     self._menuTable.frame = CGRectMake(point.x, point.y, 1, 1);
     self._menuArrow.frame = CGRectMake(point.x, point.y, 1, 1);
@@ -119,7 +119,7 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
     
     [UIView animateWithDuration:0.2 animations:^{
         self.view.alpha = 1;
-        self._menuArrow.frame = CGRectMake(menuTablePointX, menuTablePointY, menuTableWidth, menuTableWidth);
+        self._menuTable.frame = CGRectMake(menuTablePointX, menuTablePointY, menuTableWidth, tableHeight);
         self._menuArrow.frame = CGRectMake(arrowPointX, arrowPointY, arrowWidth, arrowHeight);
     }];
     
