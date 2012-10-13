@@ -17,6 +17,9 @@ typedef enum {
     UITableView *_menuTable;
 	UIImageView *_menuArrow;
 
+    BallonMenuPopupOrientation _orientation;
+    CGFloat     _maxTableHeight;
+    BOOL        _isFlexible;
     CGPoint     _startPoint;
 }
 

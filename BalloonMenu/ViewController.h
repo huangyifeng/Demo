@@ -15,8 +15,6 @@
     BalloonMenu *_balloonMenu;
 }
 
-
-
 @property(nonatomic, retain) IBOutlet UIToolbar *_balloonToolbar;
 
 - (IBAction)teamButtonPressed:(id)sender;

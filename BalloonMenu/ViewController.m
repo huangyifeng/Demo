@@ -18,6 +18,7 @@
 @implementation ViewController
 
 @synthesize _balloonMenu = _balloonMenu;
+@synthesize _balloonToolbar;
 
 - (void)dealloc
 {

@@ -12,6 +12,9 @@
 
 @implementation AppDelegate
 
+@synthesize window = _window;
+@synthesize viewController = _viewController;
+
 - (void)dealloc
 {
     [_window release];

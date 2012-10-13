@@ -28,6 +28,10 @@ static CGFloat   const DEFAULT_MAX_TABLE_HEIGHT = 200;
 @synthesize _menuArrow;
 @synthesize _startPoint;
 
+@synthesize orientation     = _orientation;
+@synthesize maxTableHeight  = _maxTableHeight;
+@synthesize isFlexible      = _isFlexible;
+
 - (void)dealloc
 {
     [_menuItems release]; _menuItems = nil;
