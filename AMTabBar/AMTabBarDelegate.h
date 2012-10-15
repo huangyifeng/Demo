@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class AMTabBar;
+
 @protocol AMTabBarDelegate <NSObject>
+
+-(void)tabBar:(AMTabBar *)tabBar didSelectIndex:(NSInteger)index;
 
 @end

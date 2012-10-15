@@ -11,13 +11,19 @@
 
 @interface AMTabBar : UIView
 {
+    //view
+    UIView                  *_selectedDot;
+    
+    //model
     NSArray                 *_titles; //string
     id<AMTabBarDelegate>    _delegate;
     NSArray                 *_buttons; //UIButton
+    NSInteger               _selectedIndex;
 }
 
 @property(nonatomic, retain)NSArray                 *titles;
-@property(nonatomic, retain)id<AMTabBarDelegate>    delegate;
+@property(nonatomic, retain)IBOutlet id<AMTabBarDelegate>    delegate;
+@property(nonatomic, assign)NSInteger               selectedIndex;
 
 - (void)renderWithTitles:(NSArray *)titles;
 

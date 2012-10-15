@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AMTabBar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>BalloonMenu.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>BB6D998D15F5AEE600D1F63B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB76FB28162C10BB000BD808</key>
 		<dict>
 			<key>primary</key>
 			<true/>

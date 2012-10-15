@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AMTabBar.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AMTabBarDelegate>
+{
+@private
+    NSArray *_dataArray;
+}
+
+@property(nonatomic, retain)IBOutlet AMTabBar  *tabBar;
+@property(nonatomic, retain)IBOutlet UILabel   *displayLabel;
 
 @end

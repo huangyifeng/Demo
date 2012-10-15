@@ -49,7 +49,6 @@
 		BB76FB3D162C10BB000BD808 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB3C162C10BB000BD808 /* Default@2x.png */; };
 		BB76FB3F162C10BB000BD808 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB3E162C10BB000BD808 /* Default-568h@2x.png */; };
 		BB76FB42162C10BB000BD808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB76FB41162C10BB000BD808 /* ViewController.m */; };
-		BB76FB45162C10BB000BD808 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB43162C10BB000BD808 /* ViewController.xib */; };
 		BB76FB4D162C12DD000BD808 /* AMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB76FB4C162C12DD000BD808 /* AMTabBar.m */; };
 		BB8361911622D9A700382216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
 		BB8361921622D9A700382216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
@@ -62,6 +61,7 @@
 		BB8361A51622D9A700382216 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8361A41622D9A700382216 /* Default-568h@2x.png */; };
 		BB8361A81622D9A700382216 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8361A71622D9A700382216 /* ViewController.m */; };
 		BB8361AB1622D9A700382216 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8361A91622D9A700382216 /* ViewController.xib */; };
+		C429DFAB162C4E9A00FCCC4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C429DFAA162C4E9A00FCCC4E /* ViewController.xib */; };
 		C4725F481609FEA30072E322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
 		C4725F491609FEA30072E322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
 		C4725F4A1609FEA30072E322 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
@@ -180,7 +180,6 @@
 		BB76FB3E162C10BB000BD808 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BB76FB40162C10BB000BD808 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB76FB41162C10BB000BD808 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BB76FB44162C10BB000BD808 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		BB76FB4B162C12DD000BD808 /* AMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTabBar.h; sourceTree = "<group>"; };
 		BB76FB4C162C12DD000BD808 /* AMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTabBar.m; sourceTree = "<group>"; };
 		BB76FB4E162C174A000BD808 /* AMTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMTabBarDelegate.h; sourceTree = "<group>"; };
@@ -197,6 +196,7 @@
 		BB8361A61622D9A700382216 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB8361A71622D9A700382216 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB8361AA1622D9A700382216 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C429DFAA162C4E9A00FCCC4E /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		C4725F461609FEA30072E322 /* ScrollToolbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollToolbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4725F4D1609FEA30072E322 /* ScrollToolbar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollToolbar-Info.plist"; sourceTree = "<group>"; };
 		C4725F4F1609FEA30072E322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -438,7 +438,7 @@
 				BB76FB38162C10BB000BD808 /* AppDelegate.m */,
 				BB76FB40162C10BB000BD808 /* ViewController.h */,
 				BB76FB41162C10BB000BD808 /* ViewController.m */,
-				BB76FB43162C10BB000BD808 /* ViewController.xib */,
+				C429DFAA162C4E9A00FCCC4E /* ViewController.xib */,
 				BB76FB2F162C10BB000BD808 /* Supporting Files */,
 			);
 			path = AMTabBar;
@@ -826,7 +826,7 @@
 				BB76FB3B162C10BB000BD808 /* Default.png in Resources */,
 				BB76FB3D162C10BB000BD808 /* Default@2x.png in Resources */,
 				BB76FB3F162C10BB000BD808 /* Default-568h@2x.png in Resources */,
-				BB76FB45162C10BB000BD808 /* ViewController.xib in Resources */,
+				C429DFAB162C4E9A00FCCC4E /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,14 +1040,6 @@
 				BB76FB32162C10BB000BD808 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BB76FB43162C10BB000BD808 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB76FB44162C10BB000BD808 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		BB8361971622D9A700382216 /* InfoPlist.strings */ = {
