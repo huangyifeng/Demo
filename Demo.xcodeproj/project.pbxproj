@@ -39,6 +39,18 @@
 		BB73BCEE1623D5ED00CC87FE /* LauncherViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BB73BCE61623D5ED00CC87FE /* LauncherViewButton.m */; };
 		BB73BCEF1623D5ED00CC87FE /* LauncherViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BB73BCEB1623D5ED00CC87FE /* LauncherViewItem.m */; };
 		BB73BCF31623F82A00CC87FE /* LauncherBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB73BCF21623F82900CC87FE /* LauncherBadgeView.m */; };
+		BB76FB2B162C10BB000BD808 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
+		BB76FB2C162C10BB000BD808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
+		BB76FB2D162C10BB000BD808 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
+		BB76FB33162C10BB000BD808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB31162C10BB000BD808 /* InfoPlist.strings */; };
+		BB76FB35162C10BB000BD808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB76FB34162C10BB000BD808 /* main.m */; };
+		BB76FB39162C10BB000BD808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB76FB38162C10BB000BD808 /* AppDelegate.m */; };
+		BB76FB3B162C10BB000BD808 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB3A162C10BB000BD808 /* Default.png */; };
+		BB76FB3D162C10BB000BD808 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB3C162C10BB000BD808 /* Default@2x.png */; };
+		BB76FB3F162C10BB000BD808 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB3E162C10BB000BD808 /* Default-568h@2x.png */; };
+		BB76FB42162C10BB000BD808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB76FB41162C10BB000BD808 /* ViewController.m */; };
+		BB76FB45162C10BB000BD808 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB76FB43162C10BB000BD808 /* ViewController.xib */; };
+		BB76FB4D162C12DD000BD808 /* AMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BB76FB4C162C12DD000BD808 /* AMTabBar.m */; };
 		BB8361911622D9A700382216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999015F5AEE600D1F63B /* UIKit.framework */; };
 		BB8361921622D9A700382216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999215F5AEE600D1F63B /* Foundation.framework */; };
 		BB8361931622D9A700382216 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D999415F5AEE600D1F63B /* CoreGraphics.framework */; };
@@ -156,6 +168,22 @@
 		BB73BCEB1623D5ED00CC87FE /* LauncherViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewItem.m; sourceTree = "<group>"; };
 		BB73BCF11623F82900CC87FE /* LauncherBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherBadgeView.h; sourceTree = "<group>"; };
 		BB73BCF21623F82900CC87FE /* LauncherBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherBadgeView.m; sourceTree = "<group>"; };
+		BB76FB29162C10BB000BD808 /* AMTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB76FB30162C10BB000BD808 /* AMTabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMTabBar-Info.plist"; sourceTree = "<group>"; };
+		BB76FB32162C10BB000BD808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB76FB34162C10BB000BD808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB76FB36162C10BB000BD808 /* AMTabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMTabBar-Prefix.pch"; sourceTree = "<group>"; };
+		BB76FB37162C10BB000BD808 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB76FB38162C10BB000BD808 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB76FB3A162C10BB000BD808 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BB76FB3C162C10BB000BD808 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BB76FB3E162C10BB000BD808 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BB76FB40162C10BB000BD808 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB76FB41162C10BB000BD808 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB76FB44162C10BB000BD808 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		BB76FB4B162C12DD000BD808 /* AMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTabBar.h; sourceTree = "<group>"; };
+		BB76FB4C162C12DD000BD808 /* AMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTabBar.m; sourceTree = "<group>"; };
+		BB76FB4E162C174A000BD808 /* AMTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMTabBarDelegate.h; sourceTree = "<group>"; };
 		BB83618F1622D9A700382216 /* LauncherView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauncherView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8361961622D9A700382216 /* LauncherView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LauncherView-Info.plist"; sourceTree = "<group>"; };
 		BB8361981622D9A700382216 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -235,6 +263,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB76FB26162C10BB000BD808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB76FB2B162C10BB000BD808 /* UIKit.framework in Frameworks */,
+				BB76FB2C162C10BB000BD808 /* Foundation.framework in Frameworks */,
+				BB76FB2D162C10BB000BD808 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB83618C1622D9A700382216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +325,7 @@
 				C4725F691609FEA30072E322 /* ScrollToolbarTests */,
 				BB8361941622D9A700382216 /* LauncherView */,
 				C4D3DE601625B7A700C447A7 /* BalloonMenu */,
+				BB76FB2E162C10BB000BD808 /* AMTabBar */,
 				BB0FA58915D4FC6200246A5E /* Frameworks */,
 				BB0FA58715D4FC6200246A5E /* Products */,
 			);
@@ -301,6 +340,7 @@
 				C4725F621609FEA30072E322 /* ScrollToolbarTests.octest */,
 				BB83618F1622D9A700382216 /* LauncherView.app */,
 				C4D3DE5B1625B7A700C447A7 /* BalloonMenu.app */,
+				BB76FB29162C10BB000BD808 /* AMTabBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -388,6 +428,44 @@
 				BB6D99AE15F5B10700D1F63B /* PagingListViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BB76FB2E162C10BB000BD808 /* AMTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BB76FB4A162C10D4000BD808 /* AMTabBar */,
+				BB76FB37162C10BB000BD808 /* AppDelegate.h */,
+				BB76FB38162C10BB000BD808 /* AppDelegate.m */,
+				BB76FB40162C10BB000BD808 /* ViewController.h */,
+				BB76FB41162C10BB000BD808 /* ViewController.m */,
+				BB76FB43162C10BB000BD808 /* ViewController.xib */,
+				BB76FB2F162C10BB000BD808 /* Supporting Files */,
+			);
+			path = AMTabBar;
+			sourceTree = "<group>";
+		};
+		BB76FB2F162C10BB000BD808 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB76FB30162C10BB000BD808 /* AMTabBar-Info.plist */,
+				BB76FB31162C10BB000BD808 /* InfoPlist.strings */,
+				BB76FB34162C10BB000BD808 /* main.m */,
+				BB76FB36162C10BB000BD808 /* AMTabBar-Prefix.pch */,
+				BB76FB3A162C10BB000BD808 /* Default.png */,
+				BB76FB3C162C10BB000BD808 /* Default@2x.png */,
+				BB76FB3E162C10BB000BD808 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB76FB4A162C10D4000BD808 /* AMTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BB76FB4B162C12DD000BD808 /* AMTabBar.h */,
+				BB76FB4C162C12DD000BD808 /* AMTabBar.m */,
+				BB76FB4E162C174A000BD808 /* AMTabBarDelegate.h */,
+			);
+			name = AMTabBar;
 			sourceTree = "<group>";
 		};
 		BB8361941622D9A700382216 /* LauncherView */ = {
@@ -600,6 +678,23 @@
 			productReference = BB6D998E15F5AEE600D1F63B /* PagingList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB76FB28162C10BB000BD808 /* AMTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB76FB48162C10BB000BD808 /* Build configuration list for PBXNativeTarget "AMTabBar" */;
+			buildPhases = (
+				BB76FB25162C10BB000BD808 /* Sources */,
+				BB76FB26162C10BB000BD808 /* Frameworks */,
+				BB76FB27162C10BB000BD808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMTabBar;
+			productName = AMTabBar;
+			productReference = BB76FB29162C10BB000BD808 /* AMTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BB83618E1622D9A700382216 /* LauncherView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB8361AC1622D9A700382216 /* Build configuration list for PBXNativeTarget "LauncherView" */;
@@ -697,6 +792,7 @@
 				C4725F611609FEA30072E322 /* ScrollToolbarTests */,
 				BB83618E1622D9A700382216 /* LauncherView */,
 				C4D3DE5A1625B7A700C447A7 /* BalloonMenu */,
+				BB76FB28162C10BB000BD808 /* AMTabBar */,
 			);
 		};
 /* End PBXProject section */
@@ -719,6 +815,18 @@
 				BB6D999B15F5AEE600D1F63B /* InfoPlist.strings in Resources */,
 				BB6D99A715F5AEE600D1F63B /* ViewController.xib in Resources */,
 				BB62FACF15F748F9000E1F6C /* SinglePageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB76FB27162C10BB000BD808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB76FB33162C10BB000BD808 /* InfoPlist.strings in Resources */,
+				BB76FB3B162C10BB000BD808 /* Default.png in Resources */,
+				BB76FB3D162C10BB000BD808 /* Default@2x.png in Resources */,
+				BB76FB3F162C10BB000BD808 /* Default-568h@2x.png in Resources */,
+				BB76FB45162C10BB000BD808 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +913,17 @@
 				BB6D99AF15F5B10700D1F63B /* PagingListViewController.m in Sources */,
 				BB62FAC815F7477E000E1F6C /* TestPagingListViewController.m in Sources */,
 				BB62FACE15F748F9000E1F6C /* SinglePageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB76FB25162C10BB000BD808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB76FB35162C10BB000BD808 /* main.m in Sources */,
+				BB76FB39162C10BB000BD808 /* AppDelegate.m in Sources */,
+				BB76FB42162C10BB000BD808 /* ViewController.m in Sources */,
+				BB76FB4D162C12DD000BD808 /* AMTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,6 +1030,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB6D99A615F5AEE600D1F63B /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		BB76FB31162C10BB000BD808 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB76FB32162C10BB000BD808 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB76FB43162C10BB000BD808 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB76FB44162C10BB000BD808 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
@@ -1079,6 +1214,54 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "PagingList/PagingList-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BB76FB46162C10BB000BD808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode4.5/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMTabBar/AMTabBar-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "AMTabBar/AMTabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB76FB47162C10BB000BD808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode4.5/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMTabBar/AMTabBar-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "AMTabBar/AMTabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1300,6 +1483,15 @@
 			buildConfigurations = (
 				BB6D99A815F5AEE600D1F63B /* Debug */,
 				BB6D99A915F5AEE600D1F63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB76FB48162C10BB000BD808 /* Build configuration list for PBXNativeTarget "AMTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB76FB46162C10BB000BD808 /* Debug */,
+				BB76FB47162C10BB000BD808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
