@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GridView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>LauncherView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -34,10 +39,20 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>TwoSideSlideMenu.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>BB0FA58515D4FC6200246A5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB650DDB1648B85E00DA4205</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +68,11 @@
 			<true/>
 		</dict>
 		<key>BB83618E1622D9A700382216</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C407A5481704914700351CEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
